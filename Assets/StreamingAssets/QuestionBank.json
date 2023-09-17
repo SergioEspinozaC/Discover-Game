@@ -1,0 +1,424 @@
+[
+  {
+    "nombreDificultad": "Easy",
+    "preguntas": [
+      {
+        "enunciado": "¿Qué fenómeno astronómico ocurre cuando la Luna pasa entre la Tierra y el Sol, bloqueando la luz solar?",
+        "respuestas": [
+          { "texto": "Eclipse lunar" },
+          { "texto": "Eclipse solar" },
+          { "texto": "Superluna" }
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "Eclipse solar"
+      },
+      {
+        "enunciado": "¿Cuál es la galaxia en la que se encuentra el Sistema Solar?",
+        "respuestas": [
+          { "texto": "Andrómeda" },
+          { "texto": "Vía Láctea" },
+          { "texto": "Centauro A" }
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "Vía láctea"
+      },
+      {
+        "enunciado": "¿Qué es un agujero negro?",
+        "respuestas": [
+          { "texto": "Un lugar en el espacio donde no hay gravedad" },
+          { "texto": "Una región del espacio donde las estrellas se forman" },
+          { "texto": "Una región del espacio con una gravedad tan fuerte que nada puede escapar de ella, ni siquiera la luz" }
+        ],
+        "respuestaCorrecta": 2,
+        "solucion": "Una región del espacio con una gravedad tan fuerte que nada puede escapar de ella, ni siquiera la luz."
+      },
+      {
+        "enunciado": "¿Cuál es el planeta más próximo al sol?",
+        "respuestas": [
+          { "texto": "Venus" },
+          { "texto": "Mercurio" },
+          { "texto": "Marte" }
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "Mercurio es el planeta más cercano al sol."
+      },
+      {
+        "enunciado": "¿Qué porcentaje de la Tierra está cubierta por agua?",
+        "respuestas": [
+          { "texto": "El 25%" },
+          { "texto": "El 50%" },
+          { "texto": "El 70%" }
+        ],
+        "respuestaCorrecta": 2,
+        "solucion": "La Tierra está compuesta por agua en un 70%, por eso se ve tan azul desde el espacio exterior."
+      },
+      {
+        "enunciado": "¿De qué están formadas las estrellas?",
+        "respuestas": [
+          { "texto": "Fuego" },
+          { "texto": "Tierra" },
+          { "texto": "Gas" }
+        ],
+        "respuestaCorrecta": 2,
+        "solucion": "Gas. Las estrellas son enormes bolas de gas caliente en combustión."
+      },
+      {
+        "enunciado": "¿Cuánto tiempo tarda la Tierra en dar una vuelta alrededor del sol?",
+        "respuestas": [
+          { "texto": "24 horas" },
+          { "texto": "365 días" },
+          { "texto": "30 o 31 días, según el mes" }
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "365 días.La tierra tarda 365 días, 6 horas, 9 minutos y 9 segundos en dar una vuelta alrededor del sol."
+      },
+      {
+        "enunciado": "¿Cuántos planetas hay en el sistema solar?",
+        "respuestas": [
+          { "texto": "7 planetas" },
+          { "texto": "8 planetas" },
+          { "texto": "9 planetas" }
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "8 planetas"
+      },
+      {
+        "enunciado": "¿Cuáles son los planetas del sistema solar?",
+        "respuestas": [
+          { "texto": "Europa, América, Oceanía, África, Asia, Antártida" },
+          { "texto": "Zeus, Atenea, Hermes, Afrodita, Apolo, Poseidón, Cronos, Ares" },
+          { "texto": "Mercurio, Venus, Tierra, Marte, Júpiter, Saturno, Urano, Neptuno" }
+        ],
+        "respuestaCorrecta": 2,
+        "solucion": "El sistema solar esta formado por:Mercurio, Venus, Tierra, Marte, Júpiter, Saturno, Urano, Neptuno"
+      },
+      {
+        "enunciado": "¿Qué lugar ocupa nuestro planeta en el sistema solar?",
+        "respuestas": [
+          { "texto": "Tercero" },
+          { "texto": "Segundo" },
+          { "texto": "Primero" }
+        ],
+        "respuestaCorrecta": 0,
+        "solucion": "Nuestro planeta es el tercero en el sistema solar"
+      },
+      {
+        "enunciado": "¿Cuántas estrellas hay en el sistema solar?",
+        "respuestas": [
+          { "texto": "1" },
+          { "texto": "2" },
+          { "texto": "4" }
+        ],
+        "respuestaCorrecta": 0,
+        "solucion": "1.En el sistema solar hay una estrella que es el sol."
+      },
+      {
+        "enunciado": "¿Qué planeta toma su nombre de la diosa romana de la belleza?",
+        "respuestas": [
+          { "texto": "Atena" },
+          { "texto": "Aura" },
+          { "texto": "Venus" }
+        ],
+        "respuestaCorrecta": 2,
+        "solucion": "Venus.El planeta Venus lleva el nombre de Venus, la diosa de la belleza en la mitología romana"
+      },
+      {
+        "enunciado": "¿A qué planeta se denomina planeta rojo? ",
+        "respuestas": [
+          { "texto": "Oceanía" },
+          { "texto": "Marte" },
+          { "texto": "Venus" }
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "Marte.Es el Planeta rojo ya que se ve en el cielo de color rojo anaranjado."
+      },
+      {
+        "enunciado": "¿Cuál fue el primer hombre en pisar la Luna?",
+        "respuestas": [
+          { "texto": "Joseph Acaba" },
+          { "texto": "Neil Alden Armstrong" },
+          { "texto": "Yuri Gagarin" }
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "Neil"
+      }
+    ]
+  },
+  {
+    "nombreDificultad": "Hard",
+    "preguntas": [
+      {
+        "enunciado": "¿Cuándo se construyeron los primeros observatorios para contemplar el espacio?",
+        "respuestas": [
+          { "texto": "En el siglo XV" },
+          { "texto": "En el año 350 d.C." },
+          { "texto": "En el año 2300 a.C." }
+        ],
+        "respuestaCorrecta": 2,
+        "solucion": "En China y Babilonia se construyeron los primeros observatorios casi al mismo tiempo, en el año 2300 a.C."
+      },
+      {
+        "enunciado": "El Universo se formó hace...",
+        "respuestas": [
+          { "texto": "14.000 millones de años" },
+          { "texto": "1 billón de años" },
+          { "texto": "100 millones de años" }
+        ],
+        "respuestaCorrecta": 0,
+        "solucion": "Edwin Hubble calculó a partir de la velocidad a la que otras galaxias se alejan unas de otras, el tiempo transcurrido desde que se formaron en un punto. Se cree que fue hace 14.000 millones de años cuando una gran explosión las hizo."
+      },
+      {
+        "enunciado": "¿Cómo se conocen también a los asteroides?",
+        "respuestas": [
+          { "texto": "Piedras espaciales" },
+          { "texto": "Planetoides" },
+          { "texto": "Meteoroides" }
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "Un asteroide es un fragmento de roca cósmica que no ha llegado a formar un planeta, por lo tanto se conoce como planetoide."
+      },
+      {
+        "enunciado": "¿De qué se compone la Vía Láctea?",
+        "respuestas": [
+          { "texto": "Planetas" },
+          { "texto": "Galaxias" },
+          { "texto": "Estrellas" }
+        ],
+        "respuestaCorrecta": 2,
+        "solucion": "Es una franja formada por mil millones de estrellas, nuestro sol es una de ellas."
+      },
+      {
+        "enunciado": "¿Qué descubrió Nicolás Copérnico?",
+        "respuestas": [
+          { "texto": "Que la Tierra gira alrededor del sol" },
+          { "texto": "El telescopio" },
+          { "texto": "Venus" }
+        ],
+        "respuestaCorrecta": 0,
+        "solucion": "En 1543 afirmó que la Tierra gira alrededor del sol, desatando un conflicto con la Iglesia, que sostenía que la Tierra estaba en el centro del Universo."
+      },
+      {
+        "enunciado": "¿Qué animal se lanzó por primera vez al espacio?",
+        "respuestas": [
+          { "texto": "Mosca de la fruta" },
+          { "texto": "Monos" },
+          { "texto": "Perros" }
+        ],
+        "respuestaCorrecta": 0,
+        "solucion": "El primer ser vivo en lanzarse al espacio fue una mosca de la fruta en 1946."
+      },
+      {
+        "enunciado": "¿Qué son esas manchas negras de la luna?",
+        "respuestas": [
+          { "texto": "Lava" },
+          { "texto": "Petróleo" },
+          { "texto": "Carbón" }
+        ],
+        "respuestaCorrecta": 0,
+        "solucion": "Lava. Son grandes cráteres que se han llenado de lava sobre la superficie de la luna."
+      },
+      {
+        "enunciado": "¿En qué fase no podemos ver la luna?",
+        "respuestas": [
+          { "texto": "Cuarto menguante" },
+          { "texto": "Luna nueva" },
+          { "texto": "Cuarto creciente" }
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "En luna nueva"
+      },
+      {
+        "enunciado": "¿Cómo se llama la estrella más brillante en el firmamento nocturno?",
+        "respuestas": [
+          { "texto": "Osa Mayor" },
+          { "texto": "Osa Menor" },
+          { "texto": "Alfa Canis Majoris" }
+        ],
+        "respuestaCorrecta": 2,
+        "solucion": "Alfa Canis Majoris, es una estrella binaria, aunque a simple vista solo se ve la estrella principal, es 40 veces más brillante que el sol."
+      },
+      {
+        "enunciado": "En qué región no se ve nunca la Estrella Polar",
+        "respuestas": [
+          { "texto": "En Groenlandia" },
+          { "texto": "En Alaska" },
+          { "texto": "En Argentina" }
+        ],
+        "respuestaCorrecta": 2,
+        "solucion": "La estrella polar sólo se ve desde el hemisferio norte, por lo tanto, no se puede ver desde Argentina."
+      },
+      {
+        "enunciado": "¿Qué parte del sol es la más caliente?",
+        "respuestas": [
+          { "texto": "La superficie" },
+          { "texto": "El núcleo" },
+          { "texto": "Ninguna de las anteriores" }
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "el núcleo, que se encuentra a temperaturas de 15 millones de grados."
+      },
+      {
+        "enunciado": "¿Cuánto tiempo tarda la Tierra en dar una vuelta alrededor del sol?",
+        "respuestas": [
+          { "texto": "24 horas" },
+          { "texto": "365 días" },
+          { "texto": "30 o 31 días, según el mes." }
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "la tierra tarda 365 días, 6 horas, 9 minutos y 9 segundos en dar una vuelta alrededor del sol."
+      },
+      {
+        "enunciado": "¿Por qué Venus es tan brillante?",
+        "respuestas": [
+          { "texto": "Por sus explosiones" },
+          { "texto": "Por su alta temperatura" },
+          { "texto": "Por sus nubes" }
+        ],
+        "respuestaCorrecta": 2,
+        "solucion": "Por sus nubes. La capa de nubes que envuelve Venus refleja la luz solar, por eso lo vemos tan brillante."
+      },
+      {
+        "enunciado": "¿Qué hay en la superficie de Marte?",
+        "respuestas": [
+          { "texto": "Lagos de hielo" },
+          { "texto": "Volcanes, cañones y planicies" },
+          { "texto": "Fuego" }
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "su relieve es similar a la Tierra con volcanes, cañones, planicies, colinas y dunas."
+      },
+      {
+        "enunciado": "¿Cuál es el planeta más grande del sistema solar?",
+        "respuestas": [
+          { "texto": "Saturno" },
+          { "texto": "Júpiter" },
+          { "texto": "Marte" }
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "Júpiter es el mayor de todos los planetas con un diámetro de casi 143.000 kilómetros."
+      },
+      {
+        "enunciado": "¿Cuál es la estrella más cercana a la Tierra?",
+        "respuestas": [
+          { "texto": "Júpiter" },
+          { "texto": "La Luna" },
+          { "texto": "El Sol" }
+        ],
+        "respuestaCorrecta": 2,
+        "solucion": "El Sol, es la estrella más cercana a la Tierra porque forma parte de nuestro sistema solar y está a una distancia de aproximadamente 149,6 millones de kilómetros (una unidad astronómica) de la Tierra."
+      },
+      {
+        "enunciado": "¿Cuál de los siguientes cuerpos celestes es considerado un planeta enano?",
+        "respuestas": [
+          { "texto": "Neptuno" },
+          { "texto": "Plutón" },
+          { "texto": "Saturno" }
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "Plutón, ya que es considerado un planeta enano porque no ha "
+      },
+      {
+        "enunciado": "¿Cuál de los siguientes planetas tienen anillos visibles?",
+        "respuestas": [
+          { "texto": "Neptuno" },
+          { "texto": "Marte" },
+          { "texto": "Saturno" }
+        ],
+        "respuestaCorrecta": 2,
+        "solucion": "Saturno, ya que es el único planeta con anillos visibles porque sus anillos son grandes, brillantes y fácilmente visibles desde la Tierra."
+      },
+      {
+        "enunciado": "¿Cuál de los siguientes cuerpos celestes es considerado un planeta enano?",
+        "respuestas": [
+          { "texto": "Neptuno" },
+          { "texto": "Plutón" },
+          { "texto": "Saturno" }
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "Plutón, ya que es considerado un planeta enano porque no ha"
+      },
+      {
+        "enunciado": "Tiempo que demora Venus en dar una vuelta alrededor del Sol, mejor conocido como un año.",
+        "respuestas": [
+          { "texto": "Venus 4329 días" },
+          { "texto": "Venus 224.7 días" },
+          { "texto": "Venus 30 685 días" }
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "Venus.Dura 224.7 días en total"
+      },
+      {
+        "enunciado": "Tiempo que demora Mercurio en dar una vuelta alrededor del Sol, mejor conocido como un año.",
+        "respuestas": [
+          { "texto": "Mercurio 88 días" },
+          { "texto": "Mercurio 224,7 días" },
+          { "texto": "Mercurio 687 días" }
+        ],
+        "respuestaCorrecta": 0,
+       
+      },
+      {
+        "enunciado": "Tiempo que demora Tierra en dar una vuelta alrededor del Sol, mejor conocido como un año.",
+        "respuestas": [
+          { "texto": "Tierra 262 días" },
+          { "texto": "Tierra 684 días" },
+          { "texto": "Tierra 365 días" }
+        ],
+        "respuestaCorrecta": 2,
+        
+      },
+
+      {
+        "enunciado": "Tiempo que demora Marte en dar una vuelta alrededor del Sol, mejor conocido como un año.",
+        "respuestas": [
+          { "texto": "Marte 687 días" },
+          { "texto": "Marte 220 horas" },
+          { "texto": "Marte 80 horas" }
+        ],
+        "respuestaCorrecta": 0,
+        
+      },
+      {
+        "enunciado": "Tiempo que demora Júpiter  en dar una vuelta alrededor del Sol, mejor conocido como un año.",
+        "respuestas": [
+          { "texto": "Júpiter 120 días" },
+          { "texto": "Júpiter 4329 días" },
+          { "texto": "Júpiter 15 días" }
+        ],
+        "respuestaCorrecta": 1,
+        
+      },
+
+      {
+        "enunciado": "Tiempo que demora Saturno en dar una vuelta alrededor del Sol, mejor conocido como un año.",
+        "respuestas": [
+          { "texto": "Saturno 687 días" },
+          { "texto": "Saturno 220 horas" },
+          { "texto": "Saturno 10 768 días" }
+        ],
+        "respuestaCorrecta": 2,
+        
+      },
+      {
+        "enunciado": "Tiempo que demora Urano en dar una vuelta alrededor del Sol, mejor conocido como un año.",
+        "respuestas": [
+          { "texto": "Urano 30 685 días" },
+          { "texto": "Urano 224 días" },
+          { "texto": "Urano 300 días" }
+        ],
+        "respuestaCorrecta": 0,
+        
+      },
+      {
+        "enunciado": "Tiempo que demora Neptuno en dar una vuelta alrededor del Sol, mejor conocido como un año.",
+        "respuestas": [
+          { "texto": "Neptuno 1 día" },
+          { "texto": "Neptuno 220 horas" },
+          { "texto": "Neptuno 60 225 días" }
+        ],
+        "respuestaCorrecta": 2,
+        
+      }
+    ]
+  }
+]
