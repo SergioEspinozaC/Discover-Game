@@ -6,33 +6,26 @@ public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 5f; // Velocidad de movimiento del astronauta.
     private int currentPlanetIndex = 0; // Índice del planeta actual.
+    private int previousPlanetIndex = 0; // Índice del planeta anterior
 
     public GameObject[] planets; // Un arreglo para almacenar todos los planetas en la escena.
+    public GameObject perdida;
     private bool isMoving = false;
     private float journeyLength;
     private float startTime;
     private Transform destination;
     private Preguntas pregunta;
     private bool respuesta;
+    private bool respondioIncorrectamente = false; // Para controlar si el jugador respondió incorrectamente.
 
     private void Start()
     {
         //planets = GameObject.FindGameObjectsWithTag("Planet");
     }
 
-    public void Move()
-    {
-        respuesta = true;
-    }
-
-    public void Stop()
-    {
-        respuesta = false;
-    }
-
     private void Update()
     {
-        // Verifica si se presionó la tecla "T" y si no estamos ya en movimiento.
+
         if (respuesta && !isMoving)
         {
             // Verifica que todavía hay planetas disponibles para avanzar.
@@ -45,6 +38,32 @@ public class PlayerController : MonoBehaviour
 
                 // Marca que estamos en movimiento.
                 isMoving = true;
+
+                // Actualiza el índice del planeta.
+                currentPlanetIndex++;
+            }
+        }
+        else if (respondioIncorrectamente && !isMoving)
+        {
+            if (currentPlanetIndex > 0) // Verifica que haya un planeta anterior para retroceder.
+            {
+                // Calcula la longitud del viaje de regreso al planeta anterior.
+                destination = planets[currentPlanetIndex - 1].transform;
+                journeyLength = Vector3.Distance(transform.position, destination.position);
+                startTime = Time.time;
+
+                // Marca que estamos en movimiento.
+                isMoving = true;
+
+                // Restablece la variable respondioIncorrectamente.
+                respondioIncorrectamente = false;
+
+                // Retrocede al planeta anterior.
+                currentPlanetIndex--;
+            }
+            else
+            {
+                Morir();
             }
         }
 
@@ -65,8 +84,52 @@ public class PlayerController : MonoBehaviour
             if (fractionOfJourney >= 1.0f)
             {
                 isMoving = false;
-                currentPlanetIndex++;
+                //currentPlanetIndex++;
             }
+        }
+
+        
+    }
+
+    public void Move()
+    {
+        respuesta = true;
+    }
+
+    public void Stop()
+    {
+        respuesta = false;
+    }
+
+    public void SetRespondioIncorrectamente(bool value)
+    {
+        respondioIncorrectamente = value;
+    }
+
+    public void Morir()
+    {
+        if (!isMoving)
+        {
+            // Coloca al jugador en la posición del objeto "Sol".
+            Transform solTransform = GameObject.Find("Sol").transform;
+            destination = solTransform;
+
+            // Calcula la longitud del viaje y guarda el tiempo de inicio.
+            journeyLength = Vector3.Distance(transform.position, destination.position);
+            startTime = Time.time;
+
+            // Marca que estamos en movimiento.
+            isMoving = true;
+        }
+
+        //perdida.SetActive(true);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collider)
+    {
+        if (collider.CompareTag("Sol"))
+        {
+            perdida.SetActive(true);
         }
     }
 }

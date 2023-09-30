@@ -25,13 +25,14 @@ public class Preguntas : MonoBehaviour
 
     private bool isInside = false; // Variable para controlar si el jugador está dentro del objeto planeta
     private PlayerController playerController;
+    
 
     // Start is called before the first frame update
     void Start()
     {
         playerController = GameObject.FindObjectOfType<PlayerController>();
         cargarBancoPreguntas();
-        setPregunta();
+        
     }
 
     // Update is called once per frame
@@ -83,6 +84,7 @@ public class Preguntas : MonoBehaviour
         if (collider.CompareTag("Player"))
         {
             isInside = true;
+            setPregunta();
             Debug.Log("Jugador entrando al planeta");
         }
     }
@@ -104,6 +106,8 @@ public class Preguntas : MonoBehaviour
             //respuestaValida = true;
             Debug.Log("respuesta correcta");
             playerController.Move();
+ 
+
             /*if (nivelPregunta == bancoPreguntas.Length)
             {
                 SceneManager.LoadScene("Creditos");
@@ -114,7 +118,7 @@ public class Preguntas : MonoBehaviour
         {
             Debug.Log("respuesta mala");
             //devolverse una casilla
-            respuestaValida = false;
+            playerController.SetRespondioIncorrectamente(true);
         }
     }
 
