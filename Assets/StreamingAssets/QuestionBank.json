@@ -354,8 +354,8 @@
           { "texto": "Mercurio 224,7 días" },
           { "texto": "Mercurio 687 días" }
         ],
-        "respuestaCorrecta": 0,
-       
+        "respuestaCorrecta": 0
+
       },
       {
         "enunciado": "Tiempo que demora Tierra en dar una vuelta alrededor del Sol, mejor conocido como un año.",
@@ -364,8 +364,8 @@
           { "texto": "Tierra 684 días" },
           { "texto": "Tierra 365 días" }
         ],
-        "respuestaCorrecta": 2,
-        
+        "respuestaCorrecta": 2
+
       },
 
       {
@@ -375,8 +375,8 @@
           { "texto": "Marte 220 horas" },
           { "texto": "Marte 80 horas" }
         ],
-        "respuestaCorrecta": 0,
-        
+        "respuestaCorrecta": 0
+
       },
       {
         "enunciado": "Tiempo que demora Júpiter  en dar una vuelta alrededor del Sol, mejor conocido como un año.",
@@ -385,8 +385,8 @@
           { "texto": "Júpiter 4329 días" },
           { "texto": "Júpiter 15 días" }
         ],
-        "respuestaCorrecta": 1,
-        
+        "respuestaCorrecta": 1
+
       },
 
       {
@@ -396,8 +396,8 @@
           { "texto": "Saturno 220 horas" },
           { "texto": "Saturno 10 768 días" }
         ],
-        "respuestaCorrecta": 2,
-        
+        "respuestaCorrecta": 2
+
       },
       {
         "enunciado": "Tiempo que demora Urano en dar una vuelta alrededor del Sol, mejor conocido como un año.",
@@ -406,8 +406,8 @@
           { "texto": "Urano 224 días" },
           { "texto": "Urano 300 días" }
         ],
-        "respuestaCorrecta": 0,
-        
+        "respuestaCorrecta": 0
+
       },
       {
         "enunciado": "Tiempo que demora Neptuno en dar una vuelta alrededor del Sol, mejor conocido como un año.",
@@ -416,8 +416,8 @@
           { "texto": "Neptuno 220 horas" },
           { "texto": "Neptuno 60 225 días" }
         ],
-        "respuestaCorrecta": 2,
-        
+        "respuestaCorrecta": 2
+
       }
     ]
   }

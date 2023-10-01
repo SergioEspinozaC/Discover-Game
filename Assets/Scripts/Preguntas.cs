@@ -11,13 +11,14 @@ public class Preguntas : MonoBehaviour
 {
 
     public GameObject panelPregunta;
-    
+   // public GameObject panelRespuesta;
 
     public bool respuestaValida;
 
     public Dificultad[] bancoPreguntas;
     public TextMeshProUGUI enunciado;
     public TextMeshProUGUI[] respuestas;
+    public TextMeshProUGUI solucion;
     public int nivelPregunta;
     public Pregunta preguntaActual;
 
@@ -55,11 +56,13 @@ public class Preguntas : MonoBehaviour
         int preguntaRandom = Random.Range(0, bancoPreguntas[nivelPregunta].preguntas.Length);
         preguntaActual = bancoPreguntas[nivelPregunta].preguntas[preguntaRandom];
         enunciado.text = preguntaActual.enunciado;
-
+        
         for (int i = 0; i < respuestas.Length; i++)
         {
             respuestas[i].text = preguntaActual.respuestas[i].texto;
         }
+
+        //solucion.text = preguntaActual.solucion;
     }
 
     public void cargarBancoPreguntas()
@@ -105,6 +108,7 @@ public class Preguntas : MonoBehaviour
         {
             //respuestaValida = true;
             Debug.Log("respuesta correcta");
+           // esperaSolucion();
             playerController.Move();
  
 
@@ -117,6 +121,7 @@ public class Preguntas : MonoBehaviour
         else
         {
             Debug.Log("respuesta mala");
+            //esperaSolucion();
             //devolverse una casilla
             playerController.SetRespondioIncorrectamente(true);
         }
@@ -131,5 +136,15 @@ public class Preguntas : MonoBehaviour
         }
         
     }
+    /*
+    IEnumerator esperaSolucion()
+    {
+        yield return new WaitForSecondsRealtime(5f);
+        if (isInside)
+        {
+            panelRespuesta.SetActive(true);
+        }
+
+    }*/
 
 }

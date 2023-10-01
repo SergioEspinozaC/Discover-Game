@@ -11,5 +11,7 @@ public class Pregunta
     public Respuesta[] respuestas;
 
     public int respuestaCorrecta;
+
+    public string solucion;
 }
 
