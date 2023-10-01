@@ -140,7 +140,7 @@
           { "texto": "Yuri Gagarin" }
         ],
         "respuestaCorrecta": 1,
-        "solucion": "Neil"
+        "solucion": "Neil Alden Armstrong. Él fue parte de la misión Apollo 11 de la NASA, que aterrizó en la Luna el 20 de julio de 1969. Neil Armstrong, comandante de la misión, bajó del módulo lunar y se convirtió en la primera persona en caminar sobre la superficie lunar"
       }
     ]
   },
@@ -315,7 +315,7 @@
           { "texto": "Saturno" }
         ],
         "respuestaCorrecta": 1,
-        "solucion": "Plutón, ya que es considerado un planeta enano porque no ha "
+        "solucion": "Plutón, ya que es considerado un planeta enano porque no ha 'limpiado' su órbita de otros objetos",
       },
       {
         "enunciado": "¿Cuál de los siguientes planetas tienen anillos visibles?",
@@ -354,7 +354,8 @@
           { "texto": "Mercurio 224,7 días" },
           { "texto": "Mercurio 687 días" }
         ],
-        "respuestaCorrecta": 0
+        "respuestaCorrecta": 0,
+        "solucion": "Mercurio. Dura 88 días en total"
 
       },
       {
@@ -364,8 +365,8 @@
           { "texto": "Tierra 684 días" },
           { "texto": "Tierra 365 días" }
         ],
-        "respuestaCorrecta": 2
-
+        "respuestaCorrecta": 2,
+        "solucion": "La Tierra. Dura 365 días en total"
       },
 
       {
@@ -375,7 +376,8 @@
           { "texto": "Marte 220 horas" },
           { "texto": "Marte 80 horas" }
         ],
-        "respuestaCorrecta": 0
+        "respuestaCorrecta": 0,
+        "solucion": "Marte.Dura 687 días en total"
 
       },
       {
@@ -385,8 +387,8 @@
           { "texto": "Júpiter 4329 días" },
           { "texto": "Júpiter 15 días" }
         ],
-        "respuestaCorrecta": 1
-
+        "respuestaCorrecta": 1,
+        "solucion": "Júpiter.Dura 4329 días en total"
       },
 
       {
@@ -396,8 +398,8 @@
           { "texto": "Saturno 220 horas" },
           { "texto": "Saturno 10 768 días" }
         ],
-        "respuestaCorrecta": 2
-
+        "respuestaCorrecta": 2,
+        "solucion": "Saturno.Dura 10 768 días en total"
       },
       {
         "enunciado": "Tiempo que demora Urano en dar una vuelta alrededor del Sol, mejor conocido como un año.",
@@ -406,8 +408,8 @@
           { "texto": "Urano 224 días" },
           { "texto": "Urano 300 días" }
         ],
-        "respuestaCorrecta": 0
-
+        "respuestaCorrecta": 0,
+        "solucion": "Urano.Dura 30 685 días en total"
       },
       {
         "enunciado": "Tiempo que demora Neptuno en dar una vuelta alrededor del Sol, mejor conocido como un año.",
@@ -416,8 +418,8 @@
           { "texto": "Neptuno 220 horas" },
           { "texto": "Neptuno 60 225 días" }
         ],
-        "respuestaCorrecta": 2
-
+        "respuestaCorrecta": 2,
+        "solucion": "Neptuno.Dura 60 225 días en total"
       }
     ]
   }

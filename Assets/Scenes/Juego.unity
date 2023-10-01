@@ -199,7 +199,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0.16470589, g: 0.12941177, b: 0.4, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -839,6 +839,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelPregunta: {fileID: 626772435}
+  panelRespuesta: {fileID: 1549176331}
   respuestaValida: 0
   tiempoRestante: 10
   tiempoText: {fileID: 1867948964}
@@ -4908,6 +4909,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelPregunta: {fileID: 1306711179}
+  panelRespuesta: {fileID: 636790481}
   respuestaValida: 0
   tiempoRestante: 10
   tiempoText: {fileID: 454084212}
@@ -5330,7 +5332,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 961829626}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.71, y: 2.34, z: 0}
+  m_LocalPosition: {x: -8.55, y: 2.6, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7359,6 +7361,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelPregunta: {fileID: 1752324461}
+  panelRespuesta: {fileID: 1366686332}
   respuestaValida: 0
   tiempoRestante: 10
   tiempoText: {fileID: 474722885}
@@ -8047,6 +8050,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelPregunta: {fileID: 1716836169}
+  panelRespuesta: {fileID: 1005577300}
   respuestaValida: 0
   tiempoRestante: 10
   tiempoText: {fileID: 1090596446}
@@ -10352,6 +10356,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelPregunta: {fileID: 2114659605}
+  panelRespuesta: {fileID: 1367869952}
   respuestaValida: 0
   tiempoRestante: 10
   tiempoText: {fileID: 85424166}
@@ -10963,6 +10968,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelPregunta: {fileID: 1920701538}
+  panelRespuesta: {fileID: 772693485}
   respuestaValida: 0
   tiempoRestante: 10
   tiempoText: {fileID: 1598788412}

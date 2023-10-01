@@ -11,7 +11,7 @@ public class Preguntas : MonoBehaviour
 {
 
     public GameObject panelPregunta;
-   // public GameObject panelRespuesta;
+    public GameObject panelRespuesta;
 
     public bool respuestaValida;
 
@@ -81,7 +81,7 @@ public class Preguntas : MonoBehaviour
             respuestas[i].text = preguntaActual.respuestas[i].texto;
         }
 
-        //solucion.text = preguntaActual.solucion;
+        solucion.text = preguntaActual.solucion;
     }
 
     public void cargarBancoPreguntas()
@@ -127,9 +127,14 @@ public class Preguntas : MonoBehaviour
         {
             //respuestaValida = true;
             Debug.Log("respuesta correcta");
-           // esperaSolucion();
-            playerController.Move();
- 
+
+
+            panelRespuesta.SetActive(true);
+            
+            tiempoRestante = 10f;
+            
+            StartCoroutine(esperarYContinuar());
+            
 
             /*if (nivelPregunta == bancoPreguntas.Length)
             {
@@ -140,7 +145,7 @@ public class Preguntas : MonoBehaviour
         else
         {
             Debug.Log("respuesta mala");
-            //esperaSolucion();
+            
             //devolverse una casilla
             playerController.SetRespondioIncorrectamente(true);
         }
@@ -155,15 +160,20 @@ public class Preguntas : MonoBehaviour
         }
         
     }
-    /*
-    IEnumerator esperaSolucion()
-    {
-        yield return new WaitForSecondsRealtime(5f);
-        if (isInside)
-        {
-            panelRespuesta.SetActive(true);
-        }
 
-    }*/
+    IEnumerator esperarYContinuar()
+    {
+        // Esperar durante 5 segundos antes de continuar
+        yield return new WaitForSecondsRealtime(5f);
+
+        // Desactivar el panel de respuesta
+        
+        panelRespuesta.SetActive(false);
+
+        // Continuar con el juego
+        playerController.Move();
+
+
+    }
 
 }
