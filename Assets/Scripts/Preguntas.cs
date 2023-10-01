@@ -15,6 +15,10 @@ public class Preguntas : MonoBehaviour
 
     public bool respuestaValida;
 
+    public float tiempoRestante = 10f;
+    public TextMeshProUGUI tiempoText;
+    private bool tiempoAgotado = false;
+
     public Dificultad[] bancoPreguntas;
     public TextMeshProUGUI enunciado;
     public TextMeshProUGUI[] respuestas;
@@ -41,12 +45,27 @@ public class Preguntas : MonoBehaviour
     {
         if (isInside)
         {
+            if (!tiempoAgotado)
+            {
+                tiempoRestante -= Time.deltaTime; // Reducir el tiempo restante
+                tiempoText.text = Mathf.CeilToInt(tiempoRestante).ToString(); // Actualizar el texto del tiempo
+
+                if (tiempoRestante <= 0)
+                {
+                    tiempoAgotado = true;
+                    tiempoText.text = "0";
+                    playerController.SetRespondioIncorrectamente(true);
+                }
+            }
             StartCoroutine(retrasoPregunta());
             //Debug.Log("Jugador dentro del planeta");
         }
         else
         {
             panelPregunta.SetActive(false);
+            tiempoRestante = 10f; // Reiniciar el tiempo cuando el jugador sale del planeta
+            tiempoAgotado = false;
+            tiempoText.text = "10"; // Actualizar el texto del tiempo
             //Debug.Log("Jugador fuera del planeta");
         }
     }
