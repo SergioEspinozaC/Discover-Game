@@ -28,7 +28,7 @@ public class Preguntas : MonoBehaviour
 
     public Button[] btnRespuesta;
 
-    private bool isInside = false; // Variable para controlar si el jugador está dentro del objeto planeta
+    private bool isInside = false; // Variable para controlar si el jugador estï¿½ dentro del objeto planeta
     private PlayerController playerController;
     
 
@@ -54,7 +54,8 @@ public class Preguntas : MonoBehaviour
                 {
                     tiempoAgotado = true;
                     tiempoText.text = "0";
-                    playerController.SetRespondioIncorrectamente(true);
+                    panelRespuesta.SetActive(true);
+                    StartCoroutine(esperarYContinuar());  
                 }
             }
             StartCoroutine(retrasoPregunta());
@@ -127,27 +128,15 @@ public class Preguntas : MonoBehaviour
         {
             //respuestaValida = true;
             Debug.Log("respuesta correcta");
-
-
-            panelRespuesta.SetActive(true);
-            
             tiempoRestante = 10f;
-            
-            StartCoroutine(esperarYContinuar());
-            
-
-            /*if (nivelPregunta == bancoPreguntas.Length)
-            {
-                SceneManager.LoadScene("Creditos");
-            }*/
-
+            playerController.Move();
         }
         else
         {
             Debug.Log("respuesta mala");
-            
-            //devolverse una casilla
-            playerController.SetRespondioIncorrectamente(true);
+            panelRespuesta.SetActive(true);
+            tiempoRestante = 10f;
+            StartCoroutine(esperarYContinuar());  
         }
     }
 
@@ -163,17 +152,8 @@ public class Preguntas : MonoBehaviour
 
     IEnumerator esperarYContinuar()
     {
-        // Esperar durante 5 segundos antes de continuar
-        yield return new WaitForSecondsRealtime(5f);
-
-        // Desactivar el panel de respuesta
-        
+        yield return new WaitForSecondsRealtime(7f);
         panelRespuesta.SetActive(false);
-
-        // Continuar con el juego
-        playerController.Move();
-
-
+        playerController.SetRespondioIncorrectamente(true);
     }
-
 }
