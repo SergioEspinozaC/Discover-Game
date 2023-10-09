@@ -50,12 +50,17 @@ public class Preguntas : MonoBehaviour
                 tiempoRestante -= Time.deltaTime; // Reducir el tiempo restante
                 tiempoText.text = Mathf.CeilToInt(tiempoRestante).ToString(); // Actualizar el texto del tiempo
 
-                if (tiempoRestante <= 0)
+                if (tiempoRestante <= 5)
                 {
-                    tiempoAgotado = true;
-                    tiempoText.text = "0";
-                    panelRespuesta.SetActive(true);
-                    StartCoroutine(esperarYContinuar());  
+                    tiempoText.color = Color.red;
+
+                    if (tiempoRestante <= 0)
+                        {
+                            tiempoAgotado = true;
+                            tiempoText.text = "0";
+                            panelRespuesta.SetActive(true);
+                            StartCoroutine(esperarYContinuar());  
+                        }
                 }
             }
             StartCoroutine(retrasoPregunta());
