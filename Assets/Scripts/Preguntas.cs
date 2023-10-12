@@ -30,7 +30,6 @@ public class Preguntas : MonoBehaviour
 
     private bool isInside = false; // Variable para controlar si el jugador est� dentro del objeto planeta
     private PlayerController playerController;
-    
 
     // Start is called before the first frame update
     void Start()

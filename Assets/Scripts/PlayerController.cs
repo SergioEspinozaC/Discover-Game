@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour
 
     public GameObject[] planets; // Un arreglo para almacenar todos los planetas en la escena.
     public GameObject perdida;
+    public GameObject victoria;
+
     private bool isMoving = false;
     private float journeyLength;
     private float startTime;
@@ -17,6 +19,7 @@ public class PlayerController : MonoBehaviour
     private Preguntas pregunta;
     private bool respuesta;
     private bool respondioIncorrectamente = false; // Para controlar si el jugador respondió incorrectamente.
+    private int preguntasIncorrectas = 0;
 
     private void Start()
     {
@@ -42,29 +45,44 @@ public class PlayerController : MonoBehaviour
                 // Actualiza el índice del planeta.
                 currentPlanetIndex++;
             }
+            else
+            {
+                victoria.SetActive(true);
+            }
         }
         else if (respondioIncorrectamente && !isMoving)
         {
             if (currentPlanetIndex > 0) // Verifica que haya un planeta anterior para retroceder.
             {
-                // Calcula la longitud del viaje de regreso al planeta anterior.
-                destination = planets[currentPlanetIndex - 1].transform;
-                journeyLength = Vector3.Distance(transform.position, destination.position);
-                startTime = Time.time;
+              
+                    // Calcula la longitud del viaje de regreso al planeta anterior.
+                    destination = planets[currentPlanetIndex - 1].transform;
+                    journeyLength = Vector3.Distance(transform.position, destination.position);
+                    startTime = Time.time;
 
-                // Marca que estamos en movimiento.
-                isMoving = true;
+                    // Marca que estamos en movimiento.
+                    isMoving = true;
 
-                // Restablece la variable respondioIncorrectamente.
-                respondioIncorrectamente = false;
+                    // Restablece la variable respondioIncorrectamente.
+                    respondioIncorrectamente = false;
 
-                // Retrocede al planeta anterior.
-                currentPlanetIndex--;
+                    // Retrocede al planeta anterior.
+                    currentPlanetIndex--;
+
+                    preguntasIncorrectas++;
+
+                    Debug.Log(preguntasIncorrectas);
+
             }
             else
             {
                 Morir();
             }
+        }
+
+        if (preguntasIncorrectas == 3)
+        {
+            Morir();
         }
 
         // Realiza el movimiento si isMoving es igual a true.
