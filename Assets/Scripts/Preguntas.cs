@@ -58,7 +58,7 @@ public class Preguntas : MonoBehaviour
                             tiempoAgotado = true;
                             tiempoText.text = "0";
                             panelRespuesta.SetActive(true);
-                            StartCoroutine(esperarYContinuar());  
+                            Debug.Log("SetActive(true)");
                         }
                 }
             }
@@ -120,6 +120,7 @@ public class Preguntas : MonoBehaviour
     {
         if (collider.CompareTag("Player"))
         {
+            panelRespuesta.SetActive(false);
             isInside = false;
             Debug.Log("Jugador saliendo del planeta");
             playerController.Stop();
@@ -130,7 +131,6 @@ public class Preguntas : MonoBehaviour
     {
         if (respuestaJugador == preguntaActual.respuestaCorrecta)
         {
-            //respuestaValida = true;
             Debug.Log("respuesta correcta");
             tiempoRestante = 10f;
             playerController.Move();
@@ -139,9 +139,13 @@ public class Preguntas : MonoBehaviour
         {
             Debug.Log("respuesta mala");
             panelRespuesta.SetActive(true);
-            tiempoRestante = 10f;
-            StartCoroutine(esperarYContinuar());  
+            Debug.Log("SetActive(true)");
         }
+    }
+
+    public void Continuar() {
+        Debug.Log("Le dio click a continuar");
+        playerController.SetRespondioIncorrectamente(true);
     }
 
     IEnumerator retrasoPregunta()
@@ -152,12 +156,5 @@ public class Preguntas : MonoBehaviour
             panelPregunta.SetActive(true);
         }
         
-    }
-
-    IEnumerator esperarYContinuar()
-    {
-        yield return new WaitForSecondsRealtime(7f);
-        panelRespuesta.SetActive(false);
-        playerController.SetRespondioIncorrectamente(true);
     }
 }

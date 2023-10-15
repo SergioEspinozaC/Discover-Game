@@ -27,6 +27,11 @@ public class CambiarEscena : MonoBehaviour
         Application.Quit();
     }
 
+    public void Continuar() {
+        Preguntas preguntas = FindObjectOfType<Preguntas>();
+        preguntas.Continuar();
+    }
+
     //Corrutina
     IEnumerator retrasoEscena(string sceneName)
     {
