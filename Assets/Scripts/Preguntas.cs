@@ -15,7 +15,7 @@ public class Preguntas : MonoBehaviour
 
     public bool respuestaValida;
 
-    public float tiempoRestante = 10f;
+    public float tiempoRestante = 20f;
     public TextMeshProUGUI tiempoText;
     private bool tiempoAgotado = false;
 
@@ -27,9 +27,13 @@ public class Preguntas : MonoBehaviour
     public Pregunta preguntaActual;
 
     public Button[] btnRespuesta;
+    public Sprite spriteCorrecto;
+    public Sprite spriteIncorrecto;
+    public Sprite spriteNormal;
 
     private bool isInside = false; // Variable para controlar si el jugador est� dentro del objeto planeta
     private PlayerController playerController;
+    private bool detenerContador = false;
 
     // Start is called before the first frame update
     void Start()
@@ -46,20 +50,23 @@ public class Preguntas : MonoBehaviour
         {
             if (!tiempoAgotado)
             {
-                tiempoRestante -= Time.deltaTime; // Reducir el tiempo restante
-                tiempoText.text = Mathf.CeilToInt(tiempoRestante).ToString(); // Actualizar el texto del tiempo
-
-                if (tiempoRestante <= 5)
+                if (!detenerContador)
                 {
-                    tiempoText.color = Color.red;
+                    tiempoRestante -= Time.deltaTime; // Reducir el tiempo restante
+                    tiempoText.text = Mathf.CeilToInt(tiempoRestante).ToString(); // Actualizar el texto del tiempo
 
-                    if (tiempoRestante <= 0)
+                    if (tiempoRestante <= 5)
+                    {
+                        tiempoText.color = Color.red;
+
+                        if (tiempoRestante <= 0)
                         {
                             tiempoAgotado = true;
                             tiempoText.text = "0";
                             panelRespuesta.SetActive(true);
                             Debug.Log("SetActive(true)");
                         }
+                    }
                 }
             }
             StartCoroutine(retrasoPregunta());
@@ -68,9 +75,9 @@ public class Preguntas : MonoBehaviour
         else
         {
             panelPregunta.SetActive(false);
-            tiempoRestante = 10f; // Reiniciar el tiempo cuando el jugador sale del planeta
+            tiempoRestante = 20f; // Reiniciar el tiempo cuando el jugador sale del planeta
             tiempoAgotado = false;
-            tiempoText.text = "10"; // Actualizar el texto del tiempo
+            tiempoText.text = "20"; // Actualizar el texto del tiempo
             //Debug.Log("Jugador fuera del planeta");
         }
     }
@@ -122,6 +129,11 @@ public class Preguntas : MonoBehaviour
         {
             panelRespuesta.SetActive(false);
             isInside = false;
+            foreach (Button btnRespuesta in btnRespuesta)
+            {
+                Image image = btnRespuesta.GetComponent<Image>();
+                image.sprite = spriteNormal;
+            }
             Debug.Log("Jugador saliendo del planeta");
             playerController.Stop();
         }
@@ -132,20 +144,50 @@ public class Preguntas : MonoBehaviour
         if (respuestaJugador == preguntaActual.respuestaCorrecta)
         {
             Debug.Log("respuesta correcta");
-            tiempoRestante = 10f;
-            playerController.Move();
+            CambiarColorBoton(btnRespuesta[respuestaJugador], spriteCorrecto);
+            StartCoroutine(retrasoMovimientoCorrecto());
         }
         else
         {
             Debug.Log("respuesta mala");
-            panelRespuesta.SetActive(true);
-            Debug.Log("SetActive(true)");
+            CambiarColorBoton(btnRespuesta[respuestaJugador], spriteIncorrecto);
+            StartCoroutine(retrasoMovimientoIncorrecto());
         }
     }
 
-    public void Continuar() {
+    private void CambiarColorBoton(Button boton, Sprite nuevoSprite)
+    {
+        // Obtener el componente Image del botón.
+        Image image = boton.GetComponent<Image>();
+        if (image != null)
+        {
+            // Cambiar el sprite del botón.
+            image.sprite = nuevoSprite;
+        }
+    }
+
+    public void Continuar() 
+    {
         Debug.Log("Le dio click a continuar");
         playerController.SetRespondioIncorrectamente(true);
+    }
+
+    public void DetenerContador()
+    {
+        detenerContador = true;
+    }
+
+    IEnumerator retrasoMovimientoCorrecto()
+    {
+        yield return new WaitForSecondsRealtime(1f);
+        tiempoRestante = 20f;
+        playerController.Move();
+    }
+
+    IEnumerator retrasoMovimientoIncorrecto()
+    {
+        yield return new WaitForSecondsRealtime(0.5f);
+        panelRespuesta.SetActive(true);
     }
 
     IEnumerator retrasoPregunta()

@@ -1320,6 +1320,9 @@ MonoBehaviour:
   - {fileID: 1487112848}
   - {fileID: 590496605}
   - {fileID: 572970888}
+  spriteCorrecto: {fileID: 21300000, guid: 4bf1d44b122660a47b94290f4b4239af, type: 3}
+  spriteIncorrecto: {fileID: 21300000, guid: fa66e7db2675ff347b29bd486ab8758a, type: 3}
+  spriteNormal: {fileID: 21300000, guid: e0834f018b648b34780410ab7992c77a, type: 3}
 --- !u!58 &208574103
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5941,6 +5944,9 @@ MonoBehaviour:
   - {fileID: 2081436016}
   - {fileID: 1146979606}
   - {fileID: 1416717984}
+  spriteCorrecto: {fileID: 21300000, guid: 4bf1d44b122660a47b94290f4b4239af, type: 3}
+  spriteIncorrecto: {fileID: 21300000, guid: fa66e7db2675ff347b29bd486ab8758a, type: 3}
+  spriteNormal: {fileID: 21300000, guid: e0834f018b648b34780410ab7992c77a, type: 3}
 --- !u!58 &902393527
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -8490,6 +8496,9 @@ MonoBehaviour:
   - {fileID: 2087346867}
   - {fileID: 850187498}
   - {fileID: 1834194923}
+  spriteCorrecto: {fileID: 21300000, guid: 4bf1d44b122660a47b94290f4b4239af, type: 3}
+  spriteIncorrecto: {fileID: 21300000, guid: fa66e7db2675ff347b29bd486ab8758a, type: 3}
+  spriteNormal: {fileID: 21300000, guid: e0834f018b648b34780410ab7992c77a, type: 3}
 --- !u!58 &1317297517
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -9316,6 +9325,9 @@ MonoBehaviour:
   - {fileID: 225899377}
   - {fileID: 1973943469}
   - {fileID: 1134664418}
+  spriteCorrecto: {fileID: 21300000, guid: 4bf1d44b122660a47b94290f4b4239af, type: 3}
+  spriteIncorrecto: {fileID: 21300000, guid: fa66e7db2675ff347b29bd486ab8758a, type: 3}
+  spriteNormal: {fileID: 21300000, guid: e0834f018b648b34780410ab7992c77a, type: 3}
 --- !u!58 &1453950054
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -11891,6 +11903,9 @@ MonoBehaviour:
   - {fileID: 343723788}
   - {fileID: 738138318}
   - {fileID: 2082583152}
+  spriteCorrecto: {fileID: 21300000, guid: 4bf1d44b122660a47b94290f4b4239af, type: 3}
+  spriteIncorrecto: {fileID: 21300000, guid: fa66e7db2675ff347b29bd486ab8758a, type: 3}
+  spriteNormal: {fileID: 21300000, guid: e0834f018b648b34780410ab7992c77a, type: 3}
 --- !u!1 &1716836169
 GameObject:
   m_ObjectHideFlags: 0
@@ -12637,6 +12652,9 @@ MonoBehaviour:
   - {fileID: 693068840}
   - {fileID: 1464046688}
   - {fileID: 1495693931}
+  spriteCorrecto: {fileID: 21300000, guid: 4bf1d44b122660a47b94290f4b4239af, type: 3}
+  spriteIncorrecto: {fileID: 21300000, guid: fa66e7db2675ff347b29bd486ab8758a, type: 3}
+  spriteNormal: {fileID: 21300000, guid: e0834f018b648b34780410ab7992c77a, type: 3}
 --- !u!58 &1842864311
 CircleCollider2D:
   m_ObjectHideFlags: 0

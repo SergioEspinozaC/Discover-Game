@@ -16,14 +16,14 @@ public class PlayerController : MonoBehaviour
     private float journeyLength;
     private float startTime;
     private Transform destination;
-    private Preguntas pregunta;
+    public Preguntas ultimoPlaneta;
     private bool respuesta;
     private bool respondioIncorrectamente = false; // Para controlar si el jugador respondió incorrectamente.
     private int preguntasIncorrectas = 0;
 
     private void Start()
     {
-        //planets = GameObject.FindGameObjectsWithTag("Planet");
+        //pregunta = GameObject.FindGameObjectsWithTag("Planet");
     }
 
     private void Update()
@@ -48,6 +48,7 @@ public class PlayerController : MonoBehaviour
             else
             {
                 victoria.SetActive(true);
+                ultimoPlaneta.DetenerContador();
             }
         }
         else if (respondioIncorrectamente && !isMoving)
