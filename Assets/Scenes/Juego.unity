@@ -1301,7 +1301,7 @@ MonoBehaviour:
   panelPregunta: {fileID: 626772435}
   panelRespuesta: {fileID: 1549176331}
   respuestaValida: 0
-  tiempoRestante: 10
+  tiempoRestante: 20
   tiempoText: {fileID: 1867948964}
   bancoPreguntas: []
   enunciado: {fileID: 109697463}
@@ -5925,7 +5925,7 @@ MonoBehaviour:
   panelPregunta: {fileID: 1306711179}
   panelRespuesta: {fileID: 636790481}
   respuestaValida: 0
-  tiempoRestante: 10
+  tiempoRestante: 20
   tiempoText: {fileID: 454084212}
   bancoPreguntas: []
   enunciado: {fileID: 965445799}
@@ -6379,6 +6379,7 @@ MonoBehaviour:
   - {fileID: 208574101}
   perdida: {fileID: 367327792}
   victoria: {fileID: 2068322553}
+  ultimoPlaneta: {fileID: 208574102}
 --- !u!50 &961829632
 Rigidbody2D:
   serializedVersion: 4
@@ -8477,7 +8478,7 @@ MonoBehaviour:
   panelPregunta: {fileID: 1752324461}
   panelRespuesta: {fileID: 1366686332}
   respuestaValida: 0
-  tiempoRestante: 10
+  tiempoRestante: 20
   tiempoText: {fileID: 474722885}
   bancoPreguntas: []
   enunciado: {fileID: 1598829861}
@@ -9306,7 +9307,7 @@ MonoBehaviour:
   panelPregunta: {fileID: 1716836169}
   panelRespuesta: {fileID: 1005577300}
   respuestaValida: 0
-  tiempoRestante: 10
+  tiempoRestante: 20
   tiempoText: {fileID: 1090596446}
   bancoPreguntas: []
   enunciado: {fileID: 1558974062}
@@ -11884,7 +11885,7 @@ MonoBehaviour:
   panelPregunta: {fileID: 2114659605}
   panelRespuesta: {fileID: 1367869952}
   respuestaValida: 0
-  tiempoRestante: 10
+  tiempoRestante: 20
   tiempoText: {fileID: 85424166}
   bancoPreguntas: []
   enunciado: {fileID: 843045216}
@@ -12633,7 +12634,7 @@ MonoBehaviour:
   panelPregunta: {fileID: 1920701538}
   panelRespuesta: {fileID: 772693485}
   respuestaValida: 0
-  tiempoRestante: 10
+  tiempoRestante: 20
   tiempoText: {fileID: 1598788412}
   bancoPreguntas: []
   enunciado: {fileID: 878777413}
