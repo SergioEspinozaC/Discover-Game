@@ -34,13 +34,14 @@ public class Preguntas : MonoBehaviour
     private bool isInside = false; // Variable para controlar si el jugador est� dentro del objeto planeta
     private PlayerController playerController;
     private bool detenerContador = false;
+    public Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {
         playerController = GameObject.FindObjectOfType<PlayerController>();
         cargarBancoPreguntas();
-        
+        //animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -70,6 +71,7 @@ public class Preguntas : MonoBehaviour
                 }
             }
             StartCoroutine(retrasoPregunta());
+            animator.SetBool("isLeaving", true);
             //Debug.Log("Jugador dentro del planeta");
         }
         else
@@ -128,6 +130,7 @@ public class Preguntas : MonoBehaviour
         if (collider.CompareTag("Player"))
         {
             panelRespuesta.SetActive(false);
+            animator.SetBool("spaceship", true);
             isInside = false;
             foreach (Button btnRespuesta in btnRespuesta)
             {
@@ -141,10 +144,12 @@ public class Preguntas : MonoBehaviour
 
     public void evaluarPregunta(int respuestaJugador)
     {
+        
         if (respuestaJugador == preguntaActual.respuestaCorrecta)
         {
             Debug.Log("respuesta correcta");
             CambiarColorBoton(btnRespuesta[respuestaJugador], spriteCorrecto);
+            StartCoroutine(TiempoAnimacion());
             StartCoroutine(retrasoMovimientoCorrecto());
         }
         else
@@ -179,9 +184,17 @@ public class Preguntas : MonoBehaviour
 
     IEnumerator retrasoMovimientoCorrecto()
     {
-        yield return new WaitForSecondsRealtime(1f);
+        yield return new WaitForSecondsRealtime(2f);
         tiempoRestante = 20f;
         playerController.Move();
+    }
+
+    IEnumerator TiempoAnimacion()
+    {
+        yield return new WaitForSecondsRealtime(1f);
+        isInside = false;
+        animator.SetBool("isLeaving", true);
+
     }
 
     IEnumerator retrasoMovimientoIncorrecto()
@@ -195,6 +208,7 @@ public class Preguntas : MonoBehaviour
         yield return new WaitForSecondsRealtime(1f);
         if (isInside)
         {
+            animator.SetBool("spaceship", false);
             panelPregunta.SetActive(true);
         }
         

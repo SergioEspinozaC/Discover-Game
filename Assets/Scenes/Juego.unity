@@ -1323,6 +1323,7 @@ MonoBehaviour:
   spriteCorrecto: {fileID: 21300000, guid: 4bf1d44b122660a47b94290f4b4239af, type: 3}
   spriteIncorrecto: {fileID: 21300000, guid: fa66e7db2675ff347b29bd486ab8758a, type: 3}
   spriteNormal: {fileID: 21300000, guid: e0834f018b648b34780410ab7992c77a, type: 3}
+  animator: {fileID: 961829633}
 --- !u!58 &208574103
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5947,6 +5948,7 @@ MonoBehaviour:
   spriteCorrecto: {fileID: 21300000, guid: 4bf1d44b122660a47b94290f4b4239af, type: 3}
   spriteIncorrecto: {fileID: 21300000, guid: fa66e7db2675ff347b29bd486ab8758a, type: 3}
   spriteNormal: {fileID: 21300000, guid: e0834f018b648b34780410ab7992c77a, type: 3}
+  animator: {fileID: 961829633}
 --- !u!58 &902393527
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6277,18 +6279,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.16440049, y: -0.120325804}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 20.802149, y: 29.2}
+    pivot: {x: 0.36762056, y: 0.32884276}
+    oldSize: {x: 19.2, y: 10.8}
     newSize: {x: 1, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 2}
+  m_Size: {x: 1.8032277, y: 3.455719}
   m_EdgeRadius: 0
 --- !u!212 &961829629
 SpriteRenderer:
@@ -6331,7 +6333,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 8a52ff4bc866b9549a802708379d8ea5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 462de6000db69994b9c36dd50b9f1b81, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -6341,7 +6343,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!4 &961829630
 Transform:
   m_ObjectHideFlags: 0
@@ -6350,9 +6352,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 961829626}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.53, y: 2.36, z: 0}
-  m_LocalScale: {x: 0.023402128, y: 0.023402128, z: 0.23402128}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: -8.59, y: 2.53, z: 0}
+  m_LocalScale: {x: 0.73, y: 0.73, z: 7.2999997}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -6380,6 +6382,7 @@ MonoBehaviour:
   perdida: {fileID: 367327792}
   victoria: {fileID: 2068322553}
   ultimoPlaneta: {fileID: 208574102}
+  animator: {fileID: 0}
 --- !u!50 &961829632
 Rigidbody2D:
   serializedVersion: 4
@@ -8500,6 +8503,7 @@ MonoBehaviour:
   spriteCorrecto: {fileID: 21300000, guid: 4bf1d44b122660a47b94290f4b4239af, type: 3}
   spriteIncorrecto: {fileID: 21300000, guid: fa66e7db2675ff347b29bd486ab8758a, type: 3}
   spriteNormal: {fileID: 21300000, guid: e0834f018b648b34780410ab7992c77a, type: 3}
+  animator: {fileID: 961829633}
 --- !u!58 &1317297517
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -9329,6 +9333,7 @@ MonoBehaviour:
   spriteCorrecto: {fileID: 21300000, guid: 4bf1d44b122660a47b94290f4b4239af, type: 3}
   spriteIncorrecto: {fileID: 21300000, guid: fa66e7db2675ff347b29bd486ab8758a, type: 3}
   spriteNormal: {fileID: 21300000, guid: e0834f018b648b34780410ab7992c77a, type: 3}
+  animator: {fileID: 961829633}
 --- !u!58 &1453950054
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -11907,6 +11912,7 @@ MonoBehaviour:
   spriteCorrecto: {fileID: 21300000, guid: 4bf1d44b122660a47b94290f4b4239af, type: 3}
   spriteIncorrecto: {fileID: 21300000, guid: fa66e7db2675ff347b29bd486ab8758a, type: 3}
   spriteNormal: {fileID: 21300000, guid: e0834f018b648b34780410ab7992c77a, type: 3}
+  animator: {fileID: 961829633}
 --- !u!1 &1716836169
 GameObject:
   m_ObjectHideFlags: 0
@@ -12656,6 +12662,7 @@ MonoBehaviour:
   spriteCorrecto: {fileID: 21300000, guid: 4bf1d44b122660a47b94290f4b4239af, type: 3}
   spriteIncorrecto: {fileID: 21300000, guid: fa66e7db2675ff347b29bd486ab8758a, type: 3}
   spriteNormal: {fileID: 21300000, guid: e0834f018b648b34780410ab7992c77a, type: 3}
+  animator: {fileID: 961829633}
 --- !u!58 &1842864311
 CircleCollider2D:
   m_ObjectHideFlags: 0

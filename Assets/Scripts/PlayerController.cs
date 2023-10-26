@@ -20,10 +20,11 @@ public class PlayerController : MonoBehaviour
     private bool respuesta;
     private bool respondioIncorrectamente = false; // Para controlar si el jugador respondió incorrectamente.
     private int preguntasIncorrectas = 0;
+    public Animator animator;
 
     private void Start()
     {
-        //pregunta = GameObject.FindGameObjectsWithTag("Planet");
+        animator = GetComponent<Animator>();
     }
 
     private void Update()
@@ -34,6 +35,8 @@ public class PlayerController : MonoBehaviour
             // Verifica que todavía hay planetas disponibles para avanzar.
             if (currentPlanetIndex < planets.Length - 1)
             {
+                //animator.SetBool("isLeaving", true);
+
                 // Calcula la longitud del viaje y guarda el tiempo de inicio.
                 destination = planets[currentPlanetIndex + 1].transform;
                 journeyLength = Vector3.Distance(transform.position, destination.position);
@@ -102,6 +105,7 @@ public class PlayerController : MonoBehaviour
             // Cuando llegamos al destino, detén el movimiento y actualiza el índice del planeta.
             if (fractionOfJourney >= 1.0f)
             {
+                animator.SetBool("isLeaving", false);
                 isMoving = false;
                 //currentPlanetIndex++;
             }
@@ -151,5 +155,6 @@ public class PlayerController : MonoBehaviour
             perdida.SetActive(true);
         }
     }
+
 }
 
