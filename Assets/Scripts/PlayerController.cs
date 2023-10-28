@@ -105,7 +105,7 @@ public class PlayerController : MonoBehaviour
             // Cuando llegamos al destino, detén el movimiento y actualiza el índice del planeta.
             if (fractionOfJourney >= 1.0f)
             {
-                animator.SetBool("isLeaving", false);
+                //animator.SetBool("isLeaving", false);
                 isMoving = false;
                 //currentPlanetIndex++;
             }

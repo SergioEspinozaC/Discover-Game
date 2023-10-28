@@ -34,6 +34,8 @@ public class Preguntas : MonoBehaviour
     private bool isInside = false; // Variable para controlar si el jugador est� dentro del objeto planeta
     private PlayerController playerController;
     private bool detenerContador = false;
+    private bool continuar = false;
+
     public Animator animator;
 
     // Start is called before the first frame update
@@ -41,7 +43,6 @@ public class Preguntas : MonoBehaviour
     {
         playerController = GameObject.FindObjectOfType<PlayerController>();
         cargarBancoPreguntas();
-        //animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -60,18 +61,17 @@ public class Preguntas : MonoBehaviour
                     {
                         tiempoText.color = Color.red;
 
-                        if (tiempoRestante <= 0)
+                        if (tiempoRestante <= 0 && !continuar)
                         {
                             tiempoAgotado = true;
                             tiempoText.text = "0";
                             panelRespuesta.SetActive(true);
-                            Debug.Log("SetActive(true)");
                         }
                     }
                 }
             }
             StartCoroutine(retrasoPregunta());
-            animator.SetBool("isLeaving", true);
+            //animator.SetBool("isLeaving", true);
             //Debug.Log("Jugador dentro del planeta");
         }
         else
@@ -81,6 +81,11 @@ public class Preguntas : MonoBehaviour
             tiempoAgotado = false;
             tiempoText.text = "20"; // Actualizar el texto del tiempo
             //Debug.Log("Jugador fuera del planeta");
+        }
+
+        if (continuar)
+        {
+            panelRespuesta.SetActive(false);
         }
     }
 
@@ -119,8 +124,13 @@ public class Preguntas : MonoBehaviour
     {
         if (collider.CompareTag("Player"))
         {
-            isInside = true;
             setPregunta();
+            
+            animator.SetBool("spaceship", false);
+            animator.SetBool("arriving", true);
+            StartCoroutine(AnimacionLlegada());
+            isInside = true;
+            //animator.SetTrigger("idleTrigger");
             Debug.Log("Jugador entrando al planeta");
         }
     }
@@ -130,6 +140,7 @@ public class Preguntas : MonoBehaviour
         if (collider.CompareTag("Player"))
         {
             panelRespuesta.SetActive(false);
+            animator.SetBool("isLeaving", false);
             animator.SetBool("spaceship", true);
             isInside = false;
             foreach (Button btnRespuesta in btnRespuesta)
@@ -174,12 +185,21 @@ public class Preguntas : MonoBehaviour
     public void Continuar() 
     {
         Debug.Log("Le dio click a continuar");
-        playerController.SetRespondioIncorrectamente(true);
+        continuar = true;
+        panelRespuesta.SetActive(false);
+        StartCoroutine(TiempoAnimacion());
+        StartCoroutine(volver());
     }
 
     public void DetenerContador()
     {
         detenerContador = true;
+    }
+
+    IEnumerator volver()
+    {
+        yield return new WaitForSecondsRealtime(2f);
+        playerController.SetRespondioIncorrectamente(true);
     }
 
     IEnumerator retrasoMovimientoCorrecto()
@@ -193,22 +213,33 @@ public class Preguntas : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(1f);
         isInside = false;
+        animator.SetBool("idle", false);
         animator.SetBool("isLeaving", true);
+    }
 
+    IEnumerator AnimacionLlegada()
+    {
+        yield return new WaitForSecondsRealtime(1.5f);
+        animator.SetBool("arriving", false);
+        animator.SetBool("idle", true);
     }
 
     IEnumerator retrasoMovimientoIncorrecto()
     {
         yield return new WaitForSecondsRealtime(0.5f);
-        panelRespuesta.SetActive(true);
+
+        if (!continuar)
+        {
+            panelRespuesta.SetActive(true);
+        }
+     
     }
 
     IEnumerator retrasoPregunta()
     {
-        yield return new WaitForSecondsRealtime(1f);
+        yield return new WaitForSecondsRealtime(3f);
         if (isInside)
         {
-            animator.SetBool("spaceship", false);
             panelPregunta.SetActive(true);
         }
         
