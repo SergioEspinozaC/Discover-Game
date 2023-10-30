@@ -31,10 +31,10 @@ public class Preguntas : MonoBehaviour
     public Sprite spriteIncorrecto;
     public Sprite spriteNormal;
 
-    private bool isInside = false; // Variable para controlar si el jugador est� dentro del objeto planeta
+    private bool isInside = false; // Variable para controlar si el jugador esta dentro del objeto planeta
     private PlayerController playerController;
     private bool detenerContador = false;
-    private bool continuar = false;
+    public bool continuar = false;
 
     public Animator animator;
 
@@ -82,11 +82,7 @@ public class Preguntas : MonoBehaviour
             tiempoText.text = "20"; // Actualizar el texto del tiempo
             //Debug.Log("Jugador fuera del planeta");
         }
-
-        if (continuar)
-        {
-            panelRespuesta.SetActive(false);
-        }
+        
     }
 
     public void setPregunta()
@@ -139,10 +135,11 @@ public class Preguntas : MonoBehaviour
     {
         if (collider.CompareTag("Player"))
         {
-            panelRespuesta.SetActive(false);
+            //panelRespuesta.SetActive(false);
             animator.SetBool("isLeaving", false);
             animator.SetBool("spaceship", true);
             isInside = false;
+            continuar = false;
             foreach (Button btnRespuesta in btnRespuesta)
             {
                 Image image = btnRespuesta.GetComponent<Image>();
@@ -186,6 +183,7 @@ public class Preguntas : MonoBehaviour
     {
         Debug.Log("Le dio click a continuar");
         continuar = true;
+        playerController.PreguntasIncorrectas();
         panelRespuesta.SetActive(false);
         StartCoroutine(TiempoAnimacion());
         StartCoroutine(volver());
@@ -228,11 +226,12 @@ public class Preguntas : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(0.5f);
 
+        //panelPregunta.SetActive(false);
+        isInside = false;
         if (!continuar)
         {
             panelRespuesta.SetActive(true);
         }
-     
     }
 
     IEnumerator retrasoPregunta()
