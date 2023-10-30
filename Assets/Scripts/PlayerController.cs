@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System.IO;
+using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 5f; // Velocidad de movimiento del astronauta.
-    private int currentPlanetIndex = 0; // Índice del planeta actual.
-    private int previousPlanetIndex = 0; // Índice del planeta anterior
+    private int currentPlanetIndex = 0; // ï¿½ndice del planeta actual.
+    private int previousPlanetIndex = 0; // ï¿½ndice del planeta anterior
 
     public GameObject[] planets; // Un arreglo para almacenar todos los planetas en la escena.
     public GameObject perdida;
@@ -17,13 +18,15 @@ public class PlayerController : MonoBehaviour
     public Sprite corazonVacio;
     public Preguntas ultimoPlaneta;
     public Animator animator;
+    public float puntos = 0;
+    public TextMeshProUGUI puntosText;
 
     private bool isMoving = false;
     private float journeyLength;
     private float startTime;
     private Transform destination;
     private bool respuesta;
-    private bool respondioIncorrectamente = false; // Para controlar si el jugador respondió incorrectamente.
+    private bool respondioIncorrectamente = false; // Para controlar si el jugador respondiï¿½ incorrectamente.
     private int preguntasIncorrectas = 0;
 
     private void Start()
@@ -36,7 +39,7 @@ public class PlayerController : MonoBehaviour
 
         if (respuesta && !isMoving)
         {
-            // Verifica que todavía hay planetas disponibles para avanzar.
+            // Verifica que todavï¿½a hay planetas disponibles para avanzar.
             if (currentPlanetIndex < planets.Length - 1)
             {
                 //animator.SetBool("isLeaving", true);
@@ -45,11 +48,13 @@ public class PlayerController : MonoBehaviour
                 destination = planets[currentPlanetIndex + 1].transform;
                 journeyLength = Vector3.Distance(transform.position, destination.position);
                 startTime = Time.time;
+                puntos += 1;
+                puntosText.text = Mathf.CeilToInt(puntos).ToString();
 
                 // Marca que estamos en movimiento.
                 isMoving = true;
 
-                // Actualiza el índice del planeta.
+                // Actualiza el ï¿½ndice del planeta.
                 currentPlanetIndex++;
             }
             else
@@ -83,6 +88,8 @@ public class PlayerController : MonoBehaviour
 
                 // Retrocede al planeta anterior.
                 currentPlanetIndex--;
+                puntos -= 1;
+                puntosText.text = Mathf.CeilToInt(puntos).ToString();
 
                 //preguntasIncorrectas++;
 
@@ -108,14 +115,14 @@ public class PlayerController : MonoBehaviour
             float distanceCovered = (Time.time - startTime) * moveSpeed;
             float fractionOfJourney = distanceCovered / journeyLength;
 
-            // Calcula la dirección y la magnitud del movimiento.
+            // Calcula la direcciï¿½n y la magnitud del movimiento.
             Vector3 direction = (destination.position - transform.position).normalized;
             float step = moveSpeed * Time.deltaTime;
 
             // Mueve al astronauta usando transform.Translate.
             transform.Translate(direction * step);
 
-            // Cuando llegamos al destino, detén el movimiento y actualiza el índice del planeta.
+            // Cuando llegamos al destino, detï¿½n el movimiento y actualiza el ï¿½ndice del planeta.
             if (fractionOfJourney >= 1.0f)
             {
                 //animator.SetBool("isLeaving", false);
@@ -151,7 +158,7 @@ public class PlayerController : MonoBehaviour
     {
         if (!isMoving)
         {
-            // Coloca al jugador en la posición del objeto "Sol".
+            // Coloca al jugador en la posiciï¿½n del objeto "Sol".
             Transform solTransform = GameObject.Find("Sol").transform;
             destination = solTransform;
 
