@@ -1,6 +1,6 @@
 [
   {
-    "nombreDificultad": "Easy",
+    "nombreDificultad": "Astronomia 1",
     "preguntas": [
       {
         "enunciado": "¿Qué fenómeno astronómico ocurre cuando la Luna pasa entre la Tierra y el Sol, bloqueando la luz solar?",
@@ -145,7 +145,7 @@
     ]
   },
   {
-    "nombreDificultad": "Hard",
+    "nombreDificultad": "Astronomia 2",
     "preguntas": [
       {
         "enunciado": "¿Cuándo se construyeron los primeros observatorios para contemplar el espacio?",

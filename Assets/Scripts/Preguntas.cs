@@ -120,12 +120,16 @@ public class Preguntas : MonoBehaviour
     {
         if (collider.CompareTag("Player"))
         {
-            setPregunta();
+
+            if (playerController.QuedanVidas())
+            {
+                setPregunta();
+                animator.SetBool("spaceship", false);
+                animator.SetBool("arriving", true);
+                StartCoroutine(AnimacionLlegada());
+                isInside = true;
+            }
             
-            animator.SetBool("spaceship", false);
-            animator.SetBool("arriving", true);
-            StartCoroutine(AnimacionLlegada());
-            isInside = true;
             //animator.SetTrigger("idleTrigger");
             Debug.Log("Jugador entrando al planeta");
         }

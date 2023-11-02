@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
     public Animator animator;
     public float puntos = 0;
     public TextMeshProUGUI puntosText;
+    public bool quedanVidas = true;
 
     private bool isMoving = false;
     private float journeyLength;
@@ -68,6 +69,7 @@ public class PlayerController : MonoBehaviour
 
             if (preguntasIncorrectas == 3)
             {
+                quedanVidas = false;
                 currentPlanetIndex = 0;
                 Morir();
             }
@@ -171,6 +173,11 @@ public class PlayerController : MonoBehaviour
         }
 
         //perdida.SetActive(true);
+    }
+
+    public bool QuedanVidas()
+    {
+        return quedanVidas;
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
