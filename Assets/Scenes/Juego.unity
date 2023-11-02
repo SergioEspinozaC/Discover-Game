@@ -1415,7 +1415,7 @@ MonoBehaviour:
   - {fileID: 1536208003}
   - {fileID: 1642645643}
   solucion: {fileID: 343574292}
-  nivelPregunta: 1
+  nivelPregunta: 5
   preguntaActual:
     enunciado: 
     respuestas: []
@@ -9043,7 +9043,7 @@ MonoBehaviour:
   - {fileID: 1588573536}
   - {fileID: 1193419839}
   solucion: {fileID: 337967122}
-  nivelPregunta: 1
+  nivelPregunta: 3
   preguntaActual:
     enunciado: 
     respuestas: []
@@ -9874,7 +9874,7 @@ MonoBehaviour:
   - {fileID: 1874317218}
   - {fileID: 1543748162}
   solucion: {fileID: 1654813748}
-  nivelPregunta: 1
+  nivelPregunta: 2
   preguntaActual:
     enunciado: 
     respuestas: []
@@ -12454,7 +12454,7 @@ MonoBehaviour:
   - {fileID: 209430493}
   - {fileID: 1352480373}
   solucion: {fileID: 1561276511}
-  nivelPregunta: 1
+  nivelPregunta: 0
   preguntaActual:
     enunciado: 
     respuestas: []
@@ -13205,7 +13205,7 @@ MonoBehaviour:
   - {fileID: 88280588}
   - {fileID: 541571597}
   solucion: {fileID: 483711118}
-  nivelPregunta: 1
+  nivelPregunta: 4
   preguntaActual:
     enunciado: 
     respuestas: []

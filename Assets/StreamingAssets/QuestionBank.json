@@ -1,257 +1,1265 @@
 [
   {
     "nombreDificultad": "Easy",
-    "preguntas":
-    [
+    "preguntas": [
       {
-          "enunciado": "¿Qué fenómeno astronómico ocurre cuando la Luna pasa entre la Tierra y el Sol, bloqueando la luz solar?",
-          "respuestas": [
+        "enunciado": "¿Qué fenómeno astronómico ocurre cuando la Luna pasa entre la Tierra y el Sol, bloqueando la luz solar?",
+        "respuestas": [
           { "texto": "Eclipse lunar" },
           { "texto": "Eclipse solar" },
           { "texto": "Superluna" }
-          ],
-          "respuestaCorrecta": 1,
-          "solucion": "Eclipse solar"
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "El Eclipse solar. Fenómeno astronómico que ocurre cuando la Luna pasa entre la Tierra y el Sol, bloqueando la luz solar"
       },
       {
-          "enunciado": "¿Cuál es la galaxia en la que se encuentra el Sistema Solar?",
-          "respuestas": [
+        "enunciado": "¿Cuál es la galaxia en la que se encuentra nuestro Sistema Solar?",
+        "respuestas": [
           { "texto": "Andrómeda" },
           { "texto": "Vía Láctea" },
           { "texto": "Centauro A" }
-          ],
-          "respuestaCorrecta": 1,
-          "solucion": "Vía láctea"
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "Nuestro Sistema Solar se encuentra en la Vía láctea"
       },
       {
-          "enunciado": "¿Qué es un agujero negro?",
-          "respuestas": [
-          { "texto": "Un lugar en el espacio donde no hay gravedad" },
-          { "texto": "Una región del espacio donde las estrellas se forman" },
-          { "texto": "Una región del espacio con una gravedad tan fuerte que nada puede escapar de ella, ni siquiera la luz" }
-          ],
-          "respuestaCorrecta": 2,
-          "solucion": "Una región del espacio con una gravedad tan fuerte que nada puede escapar de ella, ni siquiera la luz."
+        "enunciado": "¿Cuál es la región del espacio con una gravedad tan fuerte que nada puede escapar de ella, ni siquiera la luz?",
+        "respuestas": [
+          { "texto": "Espacio" },
+          { "texto": "Galaxia" },
+          { "texto": "Agujero negro" }
+        ],
+        "respuestaCorrecta": 2,
+        "solucion": "Agujero negro. Una región en la que nada puede escapar de ella, ni siquiera la luz."
       },
       {
-          "enunciado": "¿Cuál es el planeta más próximo al sol?",
-          "respuestas": [
+        "enunciado": "¿Cuál es el planeta más próximo al sol?",
+        "respuestas": [
           { "texto": "Venus" },
           { "texto": "Mercurio" },
           { "texto": "Marte" }
-          ],
-          "respuestaCorrecta": 1,
-          "solucion": "Mercurio es el planeta más cercano al sol."
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "Mercurio es el planeta más cercano al sol."
       },
       {
-          "enunciado": "¿Qué porcentaje de la Tierra está cubierta por agua?",
-          "respuestas": [
+        "enunciado": "¿Qué porcentaje de la Tierra está cubierto por agua?",
+        "respuestas": [
           { "texto": "El 25%" },
           { "texto": "El 50%" },
           { "texto": "El 70%" }
-          ],
-          "respuestaCorrecta": 2,
-          "solucion": "La Tierra está compuesta por agua en un 70%, por eso se ve tan azul desde el espacio exterior."
+        ],
+        "respuestaCorrecta": 2,
+        "solucion": "La Tierra está compuesta por agua en un 70%, por eso se ve tan azul desde el espacio exterior."
       },
       {
-          "enunciado": "¿De qué están formadas las estrellas?",
-          "respuestas": [
+        "enunciado": "¿De qué están formadas las estrellas?",
+        "respuestas": [
           { "texto": "Fuego" },
           { "texto": "Tierra" },
           { "texto": "Gas" }
-          ],
-          "respuestaCorrecta": 2,
-          "solucion": "Gas. Las estrellas son enormes bolas de gas caliente en combustión."
+        ],
+        "respuestaCorrecta": 2,
+        "solucion": "Están formadas de gas. Las estrellas son enormes bolas de gas caliente en combustión."
+      },
+      {
+        "enunciado": "¿Cuánto tiempo tarda la Tierra en dar una vuelta alrededor del sol?",
+        "respuestas": [
+          { "texto": "24 horas" },
+          { "texto": "365 días" },
+          { "texto": "30 o 31 días, según el mes" }
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "La tierra tarda 365 días, 6 horas, 9 minutos y 9 segundos en dar una vuelta alrededor del sol."
+      },
+      {
+        "enunciado": "¿Cuántos planetas hay en nuestro sistema solar?",
+        "respuestas": [
+          { "texto": "7 planetas" },
+          { "texto": "8 planetas" },
+          { "texto": "9 planetas" }
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "En nuestro sistema solar hay 8 planetas."
+      },
+      {
+        "enunciado": "¿Cuál de los siguentes ejemplos es un planeta de nuestro sistema solar?",
+        "respuestas": [
+          { "texto": "Hermes" },
+          { "texto": "Zeus" },
+          { "texto": "Venus" }
+        ],
+        "respuestaCorrecta": 2,
+        "solucion": "Venus es uno de los planetas del sistema solar"
+      },
+      {
+        "enunciado": "¿Qué lugar ocupa nuestro planeta en el sistema solar?",
+        "respuestas": [
+          { "texto": "Tercero" },
+          { "texto": "Segundo" },
+          { "texto": "Primero" }
+        ],
+        "respuestaCorrecta": 0,
+        "solucion": "Nuestro planeta es el tercero en el sistema solar"
+      },
+      {
+        "enunciado": "¿Cuántas estrellas forman parte de nuestro sistema solar?",
+        "respuestas": [
+          { "texto": "1" },
+          { "texto": "2" },
+          { "texto": "4" }
+        ],
+        "respuestaCorrecta": 0,
+        "solucion": "En el sistema solar solo hay 1 estrella que es el sol."
+      },
+      {
+        "enunciado": "¿Qué planeta toma su nombre de la diosa romana de la belleza?",
+        "respuestas": [
+          { "texto": "Atena" },
+          { "texto": "Aura" },
+          { "texto": "Venus" }
+        ],
+        "respuestaCorrecta": 2,
+        "solucion": "El planeta Venus lleva el nombre de Venus, la diosa de la belleza en la mitología romana."
+      },
+      {
+        "enunciado": "¿A qué planeta se le conoce como el planeta rojo?",
+        "respuestas": [
+          { "texto": "Oceanía" },
+          { "texto": "Marte" },
+          { "texto": "Venus" }
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "Marte es el Planeta rojo, ya que se ve en el cielo de color rojo anaranjado."
+      },
+      {
+        "enunciado": "¿Cuál fue el primer hombre en pisar la Luna?",
+        "respuestas": [
+          { "texto": "Joseph Acaba" },
+          { "texto": "Neil Alden Armstrong" },
+          { "texto": "Yuri Gagarin" }
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "Neil Alden Armstrong. Él fue parte de la misión Apollo 11 de la NASA, que aterrizó en la Luna el 20 de julio de 1969. Neil Armstrong, comandante de la misión, bajó del módulo lunar y se convirtió en la primera persona en caminar sobre la superficie lunar."
       }
     ]
   },
-
-
-
-
   {
     "nombreDificultad": "Hard",
-    "preguntas":
-    [
+    "preguntas": [
       {
-          "enunciado": "¿Cuándo se construyeron los primeros observatorios para contemplar el espacio?",
-          "respuestas": [
+        "enunciado": "¿Cuándo se construyeron los primeros observatorios para contemplar el espacio?",
+        "respuestas": [
           { "texto": "En el siglo XV" },
           { "texto": "En el año 350 d.C." },
           { "texto": "En el año 2300 a.C." }
-          ],
-          "respuestaCorrecta": 2,
-          "solucion": "En China y Babilonia se construyeron los primeros observatorios casi al mismo tiempo, en el año 2300 a.C."
+        ],
+        "respuestaCorrecta": 2,
+        "solucion": "En el año 2300 a.C. Ya que en China y Babilonia se construyeron los primeros observatorios, casi al mismo tiempo."
       },
       {
-          "enunciado": "El Universo se formó hace...",
-          "respuestas": [
+        "enunciado": "¿Hace cuantos años se formó el Universo?",
+        "respuestas": [
           { "texto": "14.000 millones de años" },
           { "texto": "1 billón de años" },
           { "texto": "100 millones de años" }
-          ],
-          "respuestaCorrecta": 0,
-          "solucion": "Edwin Hubble calculó a partir de la velocidad a la que otras galaxias se alejan unas de otras, el tiempo transcurrido desde que se formaron en un punto. Se cree que fue hace 14.000 millones de años cuando una gran explosión las hizo."
+        ],
+        "respuestaCorrecta": 0,
+        "solucion": "Se cree que fue hace 14.000 millones de años cuando una gran explosión las hizo. Edwin Hubble calculó a partir de la velocidad a la que otras galaxias se alejan unas de otras, el tiempo transcurrido desde que se formaron en un punto."
       },
       {
-          "enunciado": "¿Cómo se conocen también a los asteroides?",
-          "respuestas": [
+        "enunciado": "¿Cómo se le conocen también a los asteroides?",
+        "respuestas": [
           { "texto": "Piedras espaciales" },
           { "texto": "Planetoides" },
           { "texto": "Meteoroides" }
-          ],
-          "respuestaCorrecta": 1,
-          "solucion": "Un asteroide es un fragmento de roca cósmica que no ha llegado a formar un planeta, por lo tanto se conoce como planetoide."
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "Un asteroide es un fragmento de roca cósmica que no ha llegado a formar un planeta, por lo tanto se conoce como planetoide."
       },
       {
-          "enunciado": "¿De qué se compone la Vía Láctea?",
-          "respuestas": [
+        "enunciado": "¿De qué se compone la Vía Láctea?",
+        "respuestas": [
           { "texto": "Planetas" },
           { "texto": "Galaxias" },
           { "texto": "Estrellas" }
-          ],
-          "respuestaCorrecta": 2,
-          "solucion": "Es una franja formada por mil millones de estrellas, nuestro sol es una de ellas."
+        ],
+        "respuestaCorrecta": 2,
+        "solucion": "Es una franja formada por mil millones de estrellas, nuestro sol es una de ellas."
       },
       {
-          "enunciado": "¿Qué descubrió Nicolás Copérnico?",
-          "respuestas": [
-          { "texto": "Que la Tierra gira alrededor del sol" },
+        "enunciado": "¿Qué fue lo que descubrió Nicolás Copérnico?",
+        "respuestas": [
+          { "texto": "La Tierra gira alrededor del sol" },
           { "texto": "El telescopio" },
           { "texto": "Venus" }
-          ],
-          "respuestaCorrecta": 0,
-          "solucion": "En 1543 afirmó que la Tierra gira alrededor del sol, desatando un conflicto con la Iglesia, que sostenía que la Tierra estaba en el centro del Universo."
+        ],
+        "respuestaCorrecta": 0,
+        "solucion": "En 1543 afirmó que la Tierra gira alrededor del sol, desatando un conflicto con la Iglesia, que sostenía que la Tierra estaba en el centro del Universo."
       },
       {
-          "enunciado": "¿Qué animal se lanzó por primera vez al espacio?",
-          "respuestas": [
+        "enunciado": "¿Qué animal se lanzó por primera vez al espacio?",
+        "respuestas": [
           { "texto": "Mosca de la fruta" },
           { "texto": "Monos" },
           { "texto": "Perros" }
-          ],
-          "respuestaCorrecta": 0,
-          "solucion": "El primer ser vivo en lanzarse al espacio fue una mosca de la fruta en 1946."
+        ],
+        "respuestaCorrecta": 0,
+        "solucion": "El primer ser vivo en lanzarse al espacio fue una mosca de la fruta en 1946."
       },
       {
-          "enunciado": "¿Qué son esas manchas negras de la luna?",
-          "respuestas": [
+        "enunciado": "¿Qué son las manchas que se logran ver en la luna?",
+        "respuestas": [
           { "texto": "Lava" },
           { "texto": "Petróleo" },
           { "texto": "Carbón" }
-          ],
-          "respuestaCorrecta": 0,
-          "solucion": "Lava. Son grandes cráteres que se han llenado de lava sobre la superficie de la luna."
+        ],
+        "respuestaCorrecta": 0,
+        "solucion": "Son grandes cráteres que se han llenado de lava sobre la superficie de la luna."
       },
       {
-          "enunciado": "¿En qué fase no podemos ver la luna?",
-          "respuestas": [
+        "enunciado": "¿En qué fase lunar no podemos presenciar nuestro satélite natural?",
+        "respuestas": [
           { "texto": "Cuarto menguante" },
           { "texto": "Luna nueva" },
           { "texto": "Cuarto creciente" }
-          ],
-          "respuestaCorrecta": 1,
-          "solucion": "En luna nueva"
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "En la fase de luna nueva no podemos presenciar nuestro satélite natural"
       },
       {
-          "enunciado": "¿Cómo se llama la estrella más brillante en el firmamento nocturno?",
-          "respuestas": [
+        "enunciado": "¿Cómo se llama la estrella más brillante en el firmamento nocturno?",
+        "respuestas": [
           { "texto": "Osa Mayor" },
           { "texto": "Osa Menor" },
           { "texto": "Alfa Canis Majoris" }
-          ],
-          "respuestaCorrecta": 2,
-          "solucion": "Alfa Canis Majoris, es una estrella binaria, aunque a simple vista solo se ve la estrella principal, es 40 veces más brillante que el sol."
+        ],
+        "respuestaCorrecta": 2,
+        "solucion": "Alfa Canis Majoris, es una estrella binaria, aunque a simple vista solo se ve la estrella principal, es 40 veces más brillante que el sol."
       },
       {
-          "enunciado": "En qué región no se ve nunca la Estrella Polar",
-          "respuestas": [
+        "enunciado": "En qué región no es psoible observar la Estrella Polar",
+        "respuestas": [
           { "texto": "En Groenlandia" },
           { "texto": "En Alaska" },
           { "texto": "En Argentina" }
-          ],
-          "respuestaCorrecta": 2,
-          "solucion": "La estrella polar sólo se ve desde el hemisferio norte, por lo tanto, no se puede ver desde Argentina."
+        ],
+        "respuestaCorrecta": 2,
+        "solucion": "La estrella polar sólo se ve desde el hemisferio norte, por lo tanto, no se puede ver desde Argentina."
       },
       {
-          "enunciado": "¿Qué parte del sol es la más caliente?",
-          "respuestas": [
+        "enunciado": "¿Qué parte del sol es la más caliente?",
+        "respuestas": [
           { "texto": "La superficie" },
           { "texto": "El núcleo" },
           { "texto": "Ninguna de las anteriores" }
-          ],
-          "respuestaCorrecta": 1,
-          "solucion": "el núcleo, que se encuentra a temperaturas de 15 millones de grados."
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "El núcleo, ya que se encuentra a temperaturas de 15 millones de grados."
       },
       {
-          "enunciado": "¿Cuánto tiempo tarda la Tierra en dar una vuelta alrededor del sol?",
-          "respuestas": [
-          { "texto": "24 horas" },
-          { "texto": "365 días" },
-          { "texto": "30 o 31 días, según el mes." }
-          ],
-          "respuestaCorrecta": 1,
-          "solucion": "la tierra tarda 365 días, 6 horas, 9 minutos y 9 segundos en dar una vuelta alrededor del sol."
+        "enunciado": "¿Por qué Venus es tan brillante?",
+        "respuestas": [
+          { "texto": "Por explosiones" },
+          { "texto": "Por altas temperaturas" },
+          { "texto": "Por nubes" }
+        ],
+        "respuestaCorrecta": 2,
+        "solucion": "La capa de nubes que envuelve Venus refleja la luz solar, por eso lo vemos tan brillante."
       },
       {
-          "enunciado": "¿Por qué Venus es tan brillante?",
-          "respuestas": [
-          { "texto": "Por sus explosiones" },
-          { "texto": "Por su alta temperatura" },
-          { "texto": "Por sus nubes" }
-          ],
-          "respuestaCorrecta": 2,
-          "solucion": "Por sus nubes. La capa de nubes que envuelve Venus refleja la luz solar, por eso lo vemos tan brillante."
-      },
-      {
-          "enunciado": "¿Qué hay en la superficie de Marte?",
-          "respuestas": [
+        "enunciado": "¿Qué hay en la superficie de Marte?",
+        "respuestas": [
           { "texto": "Lagos de hielo" },
           { "texto": "Volcanes, cañones y planicies" },
           { "texto": "Fuego" }
-          ],
-          "respuestaCorrecta": 1,
-          "solucion": "su relieve es similar a la Tierra con volcanes, cañones, planicies, colinas y dunas."
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "Su relieve es similar a la Tierra con volcanes, cañones, planicies, colinas y dunas."
       },
       {
-          "enunciado": "¿Cuál es el planeta más grande del sistema solar?",
-          "respuestas": [
+        "enunciado": "¿Cuál es el planeta más grande del sistema solar?",
+        "respuestas": [
           { "texto": "Saturno" },
           { "texto": "Júpiter" },
           { "texto": "Marte" }
-          ],
-          "respuestaCorrecta": 1,
-          "solucion": "Júpiter es el mayor de todos los planetas con un diámetro de casi 143.000 kilómetros."
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "Júpiter es el mayor de todos los planetas con un diámetro de casi 143.000 kilómetros."
       },
       {
-          "enunciado": "¿Cuál es la estrella más cercana a la Tierra?",
-          "respuestas": [
+        "enunciado": "¿Cuál es la estrella más cercana a la Tierra?",
+        "respuestas": [
           { "texto": "Júpiter" },
           { "texto": "La Luna" },
           { "texto": "El Sol" }
-          ],
-          "respuestaCorrecta": 2,
-          "solucion": "El Sol, es la estrella más cercana a la Tierra porque forma parte de nuestro sistema solar y está a una distancia de aproximadamente 149,6 millones de kilómetros (una unidad astronómica) de la Tierra."
+        ],
+        "respuestaCorrecta": 2,
+        "solucion": "El Sol es la estrella más cercana a la Tierra porque forma parte de nuestro sistema solar y está a una distancia de aproximadamente 149,6 millones de kilómetros (una unidad astronómica) de la Tierra."
       },
       {
-          "enunciado": "¿Cuál de los siguientes cuerpos celestes es considerado un planeta enano?",
-          "respuestas": [
+        "enunciado": "¿Cuál de los siguientes cuerpos celestes es considerado un planeta enano?",
+        "respuestas": [
           { "texto": "Neptuno" },
           { "texto": "Plutón" },
           { "texto": "Saturno" }
-          ],
-          "respuestaCorrecta": 1,
-          "solucion": "Plutón, ya que es considerado un planeta enano porque no ha limpiado su órbita de otros objetos"
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "Plutón, ya que es considerado un planeta enano porque no ha 'limpiado' su órbita de otros objetos"
       },
       {
-          "enunciado": "¿Cuál de los siguientes planetas tienen anillos visibles?",
-          "respuestas": [
+        "enunciado": "¿Cuál de los siguientes planetas tiene anillos visibles?",
+        "respuestas": [
           { "texto": "Neptuno" },
           { "texto": "Marte" },
           { "texto": "Saturno" }
-          ],
-          "respuestaCorrecta": 2,
-          "solucion": "Saturno, ya que es el único planeta con anillos visibles porque sus anillos son grandes, brillantes y fácilmente visibles desde la Tierra."
+        ],
+        "respuestaCorrecta": 2,
+        "solucion": "Saturno, ya que es el único planeta con anillos visibles porque son grandes, brillantes y fácilmente visibles desde la Tierra."
+      },
+      {
+        "enunciado": "¿Tiempo que demora Venus en dar una vuelta alrededor del Sol?",
+        "respuestas": [
+          { "texto": "4329 días" },
+          { "texto": "224.7 días" },
+          { "texto": "30 685 días" }
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "Venus dura 224.7 días en darle la vuelta al sol"
+      },
+      {
+        "enunciado": "¿Tiempo que demora Mercurio en dar una vuelta alrededor del Sol?",
+        "respuestas": [
+          { "texto": "88 días" },
+          { "texto": "224,7 días" },
+          { "texto": "687 días" }
+        ],
+        "respuestaCorrecta": 0,
+        "solucion": "Mercurio dura 88 días en darle la vuelta al sol"
+      },
+      {
+        "enunciado": "¿Tiempo que demora Marte en dar una vuelta alrededor del Sol?",
+        "respuestas": [
+          { "texto": "687 días" },
+          { "texto": "220 horas" },
+          { "texto": "80 horas" }
+        ],
+        "respuestaCorrecta": 0,
+        "solucion": "Marte dura 687 días en darle la vuelta al sol"
+      },
+      {
+        "enunciado": "¿Tiempo que demora Júpiter en dar una vuelta alrededor del Sol?",
+        "respuestas": [
+          { "texto": "120 días" },
+          { "texto": "4329 días" },
+          { "texto": "15 días" }
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "Júpiter dura 4329 días en darle la vuelta al sol"
+      },
+      {
+        "enunciado": "¿Tiempo que demora Saturno en dar una vuelta alrededor del Sol?",
+        "respuestas": [
+          { "texto": "687 días" },
+          { "texto": "220 horas" },
+          { "texto": "10 768 días" }
+        ],
+        "respuestaCorrecta": 2,
+        "solucion": "Saturno dura 10 768 días en darle la vuelta al sol"
+      },
+      {
+        "enunciado": "¿Tiempo que demora Urano en dar una vuelta alrededor del Sol?",
+        "respuestas": [
+          { "texto": "30 685 días" },
+          { "texto": "224 días" },
+          { "texto": "300 días" }
+        ],
+        "respuestaCorrecta": 0,
+        "solucion": "Urano dura 30 685 días en darle la vuelta al sol"
+      },
+      {
+        "enunciado": "¿Tiempo que demora Neptuno en dar una vuelta alrededor del Sol?",
+        "respuestas": [
+          { "texto": "1 día" },
+          { "texto": "220 horas" },
+          { "texto": "60 225 días" }
+        ],
+        "respuestaCorrecta": 2,
+        "solucion": "Neptuno dura 60 225 días en darle la vuelta al sol"
+      }
+    ]
+  },
+  {
+    "nombreDificultad": "Ingles 1",
+    "preguntas": [
+      {
+        "enunciado": "¿Cómo se dice ‘perro’ en inglés?",
+        "respuestas": [
+          { "texto": "Dog" },
+          { "texto": "Cat" },
+          { "texto": "Bird" }
+        ],
+        "respuestaCorrecta": 0,
+        "solucion": "La forma correcta de decir ‘perro’ en inglés es Dog"
+      },
+      {
+        "enunciado": "¿Cómo se dice ‘sol’ en inglés?",
+        "respuestas": [
+          { "texto": "Sun" },
+          { "texto": "Moon" },
+          { "texto": "Star" }
+        ],
+        "respuestaCorrecta": 0,
+        "solucion": "La forma correcta de decir ‘sol’ en inglés es Sun"
+      },
+      {
+        "enunciado": "¿Cómo se dice ‘agua’ en inglés?",
+        "respuestas": [
+          { "texto": "Earth" },
+          { "texto": "Fire" },
+          { "texto": "Water" }
+        ],
+        "respuestaCorrecta": 2,
+        "solucion": "La forma correcta de decir ‘agua’ en inglés es Water"
+      },
+      {
+        "enunciado": "¿Cómo se dice ‘casa’ en inglés?",
+        "respuestas": [
+          { "texto": "Tree" },
+          { "texto": "House" },
+          { "texto": "Car" }
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "La forma correcta de decir ‘casa’ en inglés es House"
+      },
+      {
+        "enunciado": "¿Cómo se dice ‘libro’ en inglés?",
+        "respuestas": [
+          { "texto": "Chair" },
+          { "texto": "Book" },
+          { "texto": "Table" }
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "La forma correcta de decir ‘libro’ en inglés es Book"
+      },
+      {
+        "enunciado": "¿Cómo se dice ‘nube’ en inglés?",
+        "respuestas": [
+          { "texto": "Rain" },
+          { "texto": "Sky" },
+          { "texto": "Cloud" }
+        ],
+        "respuestaCorrecta": 2,
+        "solucion": "La forma correcta de decir ‘nube’ en inglés es Cloud"
+      },
+      {
+        "enunciado": "¿Cómo se dice ‘pelota’ en inglés?",
+        "respuestas": [
+          { "texto": "Bike" },
+          { "texto": "Ball" },
+          { "texto": "Bus" }
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "La forma correcta de decir ‘pelota’ en inglés es Ball"
+      },
+      {
+        "enunciado": "¿Cómo se dice ‘árbol’ en inglés?",
+        "respuestas": [
+          { "texto": "Tree" },
+          { "texto": "Flower" },
+          { "texto": "Rock" }
+        ],
+        "respuestaCorrecta": 0,
+        "solucion": "La forma correcta de decir ‘árbol’ en inglés es Tree"
+      },
+      {
+        "enunciado": "¿Cómo se dice ‘gato’ en inglés?",
+        "respuestas": [
+          { "texto": "Fish" },
+          { "texto": "Cat" },
+          { "texto": "Dog" }
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "La forma correcta de decir ‘gato’ en inglés es Cat"
+      },
+      {
+        "enunciado": "¿Cómo se dice ‘coche’ en inglés?",
+        "respuestas": [
+          { "texto": "Car" },
+          { "texto": "Boat" },
+          { "texto": "Plane" }
+        ],
+        "respuestaCorrecta": 0,
+        "solucion": "La forma correcta de decir ‘coche’ en inglés es Car"
+      },
+      {
+        "enunciado": "¿Cómo se dice ‘escuela’ en inglés?",
+        "respuestas": [
+          { "texto": "Beach" },
+          { "texto": "Park" },
+          { "texto": "School" }
+        ],
+        "respuestaCorrecta": 2,
+        "solucion": "La forma correcta de decir ‘escuela’ en inglés es School"
+      },
+      {
+        "enunciado": "¿Cómo se dice ‘rojo’ en inglés?",
+        "respuestas": [
+          { "texto": "Red" },
+          { "texto": "Green" },
+          { "texto": "Blue" }
+        ],
+        "respuestaCorrecta": 0,
+        "solucion": "La forma correcta de decir ‘rojo’ en inglés es Red"
+      },
+      {
+        "enunciado": "¿Cómo se dice ‘leche’ en inglés?",
+        "respuestas": [
+          { "texto": "Juice" },
+          { "texto": "Milk" },
+          { "texto": "Soda" }
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "La forma correcta de decir ‘leche’ en inglés es Milk"
+      },
+      {
+        "enunciado": "¿Cómo se dice ‘pájaro’ en inglés?",
+        "respuestas": [
+          { "texto": "Elephant" },
+          { "texto": "Fish" },
+          { "texto": "Bird" }
+        ],
+        "respuestaCorrecta": 2,
+        "solucion": "La forma correcta de decir ‘pájaro’ en inglés es Bird"
+      }
+    ]
+  },
+  {
+    "nombreDificultad": "Ingles 2",
+    "preguntas": [
+      {
+        "enunciado": "¿Cómo se dice la frase ‘buenas tardes’ en inglés?",
+        "respuestas": [
+          { "texto": "Good morning" },
+          { "texto": "Good afternoon" },
+          { "texto": "Good night" }
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "La frase ‘buenas tardes’ se dice ‘good afternoon’ en inglés"
+      },
+      {
+        "enunciado": "¿Cómo se dice la frase ‘ven conmigo’ en inglés?",
+        "respuestas": [
+          { "texto": "View carefully" },
+          { "texto": "Come back" },
+          { "texto": "Come with me" }
+        ],
+        "respuestaCorrecta": 2,
+        "solucion": "La frase ‘ven conmigo’ se dice ‘come with me’ en inglés"
+      },
+      {
+        "enunciado": "¿Cómo se dice la frase ‘un globo rojo’ en inglés?",
+        "respuestas": [
+          { "texto": "A red balloon" },
+          { "texto": "A balloon red" },
+          { "texto": "A red glove" }
+        ],
+        "respuestaCorrecta": 0,
+        "solucion": "La frase ‘un globo rojo’ se dice ‘A red balloon’"
+      },
+      {
+        "enunciado": "¿Cómo se lee el número ‘850’ en inglés?",
+        "respuestas": [
+          { "texto": "Eight fifty" },
+          { "texto": "Eight thousand fifty" },
+          { "texto": "Eight hundred fifty" }
+        ],
+        "respuestaCorrecta": 2,
+        "solucion": "El número ‘850’ se lee Eight hundred fifty"
+      },
+      {
+        "enunciado": "¿Cómo se dice ‘Navidad’ en inglés?",
+        "respuestas": [
+          { "texto": "Holiday" },
+          { "texto": "Naivety" },
+          { "texto": "Christmas" }
+        ],
+        "respuestaCorrecta": 2,
+        "solucion": "En inglés ‘Navidad’ se dice ‘Christmas’ "
+      },
+      {
+        "enunciado": "¿Cuál es un pronombre en inglés?",
+        "respuestas": [
+          { "texto": "She" },
+          { "texto": "Tree" },
+          { "texto": "Carlos" }
+        ],
+        "respuestaCorrecta": 0,
+        "solucion": "Un pronombre en inglés es ‘she’ que significa ‘ella’ en español"
+      },
+      {
+        "enunciado": "¿Cómo se dice la frase ‘un día frío’ en inglés?",
+        "respuestas": [
+          { "texto": "A cold day" },
+          { "texto": "A hot day" },
+          { "texto": "A free day" }
+        ],
+        "respuestaCorrecta": 0,
+        "solucion": "La frase ‘un día frío’ se dice ‘a cold day’ en inglés"
+      },
+      {
+        "enunciado": "¿Cómo se dice ‘hermanastro’ en inglés?",
+        "respuestas": [
+          { "texto": "Adopted brother" },
+          { "texto": "Step-brother" },
+          { "texto": "Brother-in-law" }
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "La palabra ‘hermanastro’ se dice ‘step-brother’ en inglés"
+      },
+      {
+        "enunciado": "¿Cuál es el opuesto de ‘arriba’ en inglés?",
+        "respuestas": [
+          { "texto": "Between" },
+          { "texto": "Up" },
+          { "texto": "Down" }
+        ],
+        "respuestaCorrecta": 2,
+        "solucion": "El opuesto de ‘arriba’ es ‘abajo’ que se dice ‘down’ en inglés"
+      },
+      {
+        "enunciado": "¿Cómo se dice la frase ‘algunas horas’ en inglés?",
+        "respuestas": [
+          { "texto": "After hours" },
+          { "texto": "Some hours" },
+          { "texto": "Sleep hours" }
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "La frase ‘algunas horas’ se dice ‘some hours’ en inglés"
+      },
+      {
+        "enunciado": "¿Cómo se dice la palabra ‘deseo’ en inglés?",
+        "respuestas": [
+          { "texto": "Wish" },
+          { "texto": "Want" },
+          { "texto": "Do" }
+        ],
+        "respuestaCorrecta": 0,
+        "solucion": "La palabra ‘deseo’ se dice ‘wish’ en inglés"
+      },
+      {
+        "enunciado": "¿Cuál es un sinónimo de la palabra en inglés ‘sour’ (agrio)?",
+        "respuestas": [
+          { "texto": "Bitter" },
+          { "texto": "Sweet" },
+          { "texto": "Spicy" }
+        ],
+        "respuestaCorrecta": 0,
+        "solucion": "Un sinónimo de ‘sour’ es ‘bitter’ que significa ‘amargo’ en español"
+      },
+      {
+        "enunciado": "¿Cuál de las siguientes marcas es realmente una palabra en inglés?",
+        "respuestas": [
+          { "texto": "Samsung" },
+          { "texto": "Toshiba" },
+          { "texto": "Starbucks" }
+        ],
+        "respuestaCorrecta": 2,
+        "solucion": "El nombre de a marca ‘Starbucks’ proviene del inglés"
+      },
+      {
+        "enunciado": "¿Cómo se llama el color ‘magenta’ en inglés?",
+        "respuestas": [
+          { "texto": "Magenta" },
+          { "texto": "Teal" },
+          { "texto": "Madang" }
+        ],
+        "respuestaCorrecta": 0,
+        "solucion": "El color ‘magent’ se escribe igual tanto en español como en inglés"
+      },
+      {
+        "enunciado": "¿Cómo se dice el número ‘23’ en inglés?",
+        "respuestas": [
+          { "texto": "Two three" },
+          { "texto": "Twenty-three" },
+          { "texto": "Thirteen" }
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "El número ‘23’ se lee como ‘Twenty-three’ en inglés"
+      },
+      {
+        "enunciado": "¿Cuál es una raza de perro en inglés?",
+        "respuestas": [
+          { "texto": "German Shepherd" },
+          { "texto": "Albino Otter" },
+          { "texto": "Mountain moose" }
+        ],
+        "respuestaCorrecta": 0,
+        "solucion": "Una raza de perro es ‘german shepherd’ que significa ‘pastor alemán’ en español"
+      },
+      {
+        "enunciado": "¿Cuál de las siguientes palabras no es una comida en inglés?",
+        "respuestas": [
+          { "texto": "French fries" },
+          { "texto": "Autumn Skullcap" },
+          { "texto": "Ham" }
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "El ‘Autumn Skullcap’ es un tipo de hongo venenoso"
+      },
+      {
+        "enunciado": "¿Cuál de las siguientes palabras está en inglés?",
+        "respuestas": [
+          { "texto": "Formaggio" },
+          { "texto": "Montagne" },
+          { "texto": "Leprechaun" }
+        ],
+        "respuestaCorrecta": 2,
+        "solucion": "La palabra ‘Leprechaun’ significa ‘duende’ en inglés"
+      },
+      {
+        "enunciado": "How many toes do humans have?",
+        "respuestas": [
+          { "texto": "Five" },
+          { "texto": "Ten" },
+          { "texto": "Twenty" }
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "La pregunta dice ‘¿Cuantos dedos de los pies tienen los humanos’, la respuesta correcta es diez, o sea, ‘ten’ en inglés"
+      },
+      {
+        "enunciado": "¿Cuál es la traducción correcta de ‘libertad’ en inglés?",
+        "respuestas": [
+          { "texto": "Freedom" },
+          { "texto": "Libatory" },
+          { "texto": "Legacy" }
+        ],
+        "respuestaCorrecta": 0,
+        "solucion": "La traducción de ‘libertad’ es ‘freedom’en inglés"
+      }
+    ]
+  },
+  {
+    "nombreDificultad": "Matematicas 1",
+    "preguntas": [
+      {
+        "enunciado": "¿Cuál es la suma de 2 + 3?",
+        "respuestas": [
+          { "texto": "4" },
+          { "texto": "5" },
+          { "texto": "6" }
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "El resultado de la suma es 5"
+      },
+      {
+        "enunciado": "¿Cuál es el número que sigue en la serie: 2, 4, 6, ...?",
+        "respuestas": [
+          { "texto": "8" },
+          { "texto": "10" },
+          { "texto": "12" }
+        ],
+        "respuestaCorrecta": 0,
+        "solucion": "El número que sigue en la serie es 8"
+      },
+      {
+        "enunciado": "¿Cuál es el resultado de restar 8 - 3?",
+        "respuestas": [
+          { "texto": "2" },
+          { "texto": "5" },
+          { "texto": "8" }
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "El resultado de la resta es 5"
+      },
+      {
+        "enunciado": "Si tienes 3 manzanas y das 2 a tu amigo, ¿cuántas manzanas te quedan?",
+        "respuestas": [
+          { "texto": "3" },
+          { "texto": "2" },
+          { "texto": "1" }
+        ],
+        "respuestaCorrecta": 2,
+        "solucion": "El resultado es 1 manzana. 3 - 2 = 1"
+      },
+      {
+        "enunciado": "¿Cuál es la forma de un círculo?",
+        "respuestas": [
+          { "texto": "Circular" },
+          { "texto": "Triángular" },
+          { "texto": "Cuadrada" }
+        ],
+        "respuestaCorrecta": 0,
+        "solucion": "La forma de un Círculo es Circular"
+      },
+      {
+        "enunciado": "Si tienes 4 lápices y compras 2 más, ¿cuántos lápices tendrás en total?",
+        "respuestas": [
+          { "texto": "6" },
+          { "texto": "4" },
+          { "texto": "7" }
+        ],
+        "respuestaCorrecta": 0,
+        "solucion": "Tendrías 6 lapices en total. 4 + 2 = 6"
+      },
+      {
+        "enunciado": "¿Cuántos lados tiene un rectángulo?",
+        "respuestas": [
+          { "texto": "5" },
+          { "texto": "4" },
+          { "texto": "3" }
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "Un rectángulo tiene 4 lados"
+      },
+      {
+        "enunciado": "¿Cuál es el número antes de 9?",
+        "respuestas": [
+          { "texto": "7" },
+          { "texto": "10" },
+          { "texto": "8" }
+        ],
+        "respuestaCorrecta": 2,
+        "solucion": "El número antes de 9 es 8"
+      },
+      {
+        "enunciado": "Si tienes 10 galletas y comes 3, ¿cuántas galletas te quedan?",
+        "respuestas": [
+          { "texto": "7" },
+          { "texto": "6" },
+          { "texto": "8" }
+        ],
+        "respuestaCorrecta": 0,
+        "solucion": "Si te comes 3 galletas te quedarían 7. Ya que 10 - 3 = 7."
+      },
+      {
+        "enunciado": "¿Cuál es el resultado de multiplicar 2 x 3?",
+        "respuestas": [
+          { "texto": "2" },
+          { "texto": "4" },
+          { "texto": "6" }
+        ],
+        "respuestaCorrecta": 2,
+        "solucion": "El resultado es 6."
+      },
+      {
+        "enunciado": "Qué cantidad expresa el número romano V.",
+        "respuestas": [
+          { "texto": "Uno" },
+          { "texto": "Cinco" },
+          { "texto": "Diez" }
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "El número 5, equivale al numero romano V"
+      },
+      {
+        "enunciado": "Cuál es el número anterior a 1000.",
+        "respuestas": [
+          { "texto": "1001" },
+          { "texto": "990" },
+          { "texto": "999" }
+        ],
+        "respuestaCorrecta": 2,
+        "solucion": "El numero 999 es el número anterior a 1000"
+      },
+      {
+        "enunciado": "Un perro pesa 20 kilos y un cachorro pesa 10 kilos menos que él, ¿cuánto pesa la cría?",
+        "respuestas": [
+          { "texto": "30 kilos" },
+          { "texto": "10 kilos" },
+          { "texto": "Ninguna de las anteriores" }
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "Hay que restar al peso del perro adulto el de la cría, la solución es 10 kilos"
+      },
+      {
+        "enunciado": "¿Cuánto es 4 + 2?",
+        "respuestas": [
+          { "texto": "6" },
+          { "texto": "8" },
+          { "texto": "10" }
+        ],
+        "respuestaCorrecta": 0,
+        "solucion": "El resultado de la suma es 6."
+      },
+
+      {
+        "enunciado": "Si tienes 5 dedos en una mano, ¿cuántos dedos tienes en dos manos?",
+        "respuestas": [
+          { "texto": "5" },
+          { "texto": "10" },
+          { "texto": "15" }
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "Tienes 10 dedos en dos manos"
+      },
+
+      {
+        "enunciado": "¿Cuántos lados tiene un triángulo?",
+        "respuestas": [
+          { "texto": "3" },
+          { "texto": "4" },
+          { "texto": "5" }
+        ],
+        "respuestaCorrecta": 0,
+        "solucion": "Un triángulo tiene 3 lados"
+      },
+      {
+        "enunciado": "Si compras un juguete que cuesta 15 dólares y pagas con un billete de 20, ¿cuánto te deben devolver?",
+
+        "respuestas": [
+          { "texto": "5 dólares" },
+          { "texto": "10 dólares" },
+          { "texto": "15 dólares" }
+        ],
+        "respuestaCorrecta": 0,
+        "solucion": "Te deben devolver 5 dólares"
+      },
+      {
+        "enunciado": "¿Cuál es el resultado de dividir 18 por 3?",
+        "respuestas": [
+          { "texto": "4" },
+          { "texto": "6" },
+          { "texto": "9" }
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "El resultado de la divisón es 6"
+      },
+      {
+        "enunciado": "Si tienes 8 bolígrafos y pierdes 2, ¿cuántos bolígrafos te quedan?",
+        "respuestas": [
+          { "texto": "2" },
+          { "texto": "6" },
+          { "texto": "8" }
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "Te quedan 6 bolígrafos. 8 - 2 = 6."
+      },
+      {
+        "enunciado": "Si un solo gato tiene 4 patas, ¿cuántas patas hay entre 3 gatos?",
+        "respuestas": [
+          { "texto": "12" },
+          { "texto": "20" },
+          { "texto": "10" }
+        ],
+        "respuestaCorrecta": 0,
+        "solucion": "Entre los 3 gatos hay 12 patas en total"
+      },
+      {
+        "enunciado": "Si tienes 7 caramelos y decides compartirlos igualmente con 2 amigos, ¿cuántos recibirá cada uno?",
+        "respuestas": [
+          { "texto": "2" },
+          { "texto": "3" },
+          { "texto": "4" }
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "Cada amigo recibirá 3 caramelos"
+      },
+      {
+        "enunciado": "Si tienes una pizza cortada en 8 rebanadas y comes 3 de ellas, ¿cuántas rebanadas de pizza quedan?",
+        "respuestas": [
+          { "texto": "2" },
+          { "texto": "3" },
+          { "texto": "5" }
+        ],
+        "respuestaCorrecta": 2,
+        "solucion": "Quedan 5 rebanadas de pizza. 8 - 3 = 5."
+      },
+      {
+        "enunciado": "¿Cuál es el doble de 5?",
+        "respuestas": [
+          { "texto": "10" },
+          { "texto": "15" },
+          { "texto": "20" }
+        ],
+        "respuestaCorrecta": 0,
+        "solucion": "El doble de 5 es 10"
+      }
+    ]
+  },
+  {
+    "nombreDificultad": "Matematicas 2",
+    "preguntas": [
+      {
+        "enunciado": "¿Cuál es el resultado de multiplicar 5 x 3?",
+        "respuestas": [
+          { "texto": "15" },
+          { "texto": "10" },
+          { "texto": "20" }
+        ],
+        "respuestaCorrecta": 0,
+        "solucion": "El resultado de la multiplicación es 15"
+      },
+      {
+        "enunciado": "¿Cuál es el resultado de multiplicar 6 x 8?",
+        "respuestas": [
+          { "texto": "24" },
+          { "texto": "36" },
+          { "texto": "48" }
+        ],
+        "respuestaCorrecta": 2,
+        "solucion": "El resultado de la multiplicación es 48"
+      },
+      {
+        "enunciado": "¿Cuál es el resultado de multiplicar 9 x 7?",
+        "respuestas": [
+          { "texto": "72" },
+          { "texto": "63" },
+          { "texto": "56" }
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "El resultado de la multiplicación es 63"
+      },
+      {
+        "enunciado": "¿Cuál es el resultado de multiplicar 7 x 3?",
+        "respuestas": [
+          { "texto": "14" },
+          { "texto": "21" },
+          { "texto": "28" }
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "El resultado de la multiplicación es 21"
+      },
+      {
+        "enunciado": "¿Cuál es el resultado de multiplicar 8 x 6?",
+        "respuestas": [
+          { "texto": "56" },
+          { "texto": "42" },
+          { "texto": "48" }
+        ],
+        "respuestaCorrecta": 2,
+        "solucion": "El resultado de la multiplicación es 48"
+      },
+      {
+        "enunciado": "¿Cuál es el resultado de multiplicar 5 x 7?",
+        "respuestas": [
+          { "texto": "30" },
+          { "texto": "35" },
+          { "texto": "40" }
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "El resultado de la multiplicación es 35"
+      },
+      {
+        "enunciado": "¿Cuál es el resultado de multiplicar 6 x 4?",
+        "respuestas": [
+          { "texto": "24" },
+          { "texto": "26" },
+          { "texto": "30" }
+        ],
+        "respuestaCorrecta": 0,
+        "solucion": "El resultado de la multiplicación es 24"
+      },
+      {
+        "enunciado": "¿Cuál es el resultado de multiplicar 7 x 3?",
+        "respuestas": [
+          { "texto": "14" },
+          { "texto": "21" },
+          { "texto": "27" }
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "El resultado de la multiplicación es 21"
+      },
+
+      {
+        "enunciado": "¿Cuál es el resultado de 5 + 3 x 3?",
+        "respuestas": [
+          { "texto": "14" },
+          { "texto": "21" },
+          { "texto": "27" }
+        ],
+        "respuestaCorrecta": 0,
+        "solucion": "El resultado es 14. Debes seguir el orden de las operaciones matemáticas: Paréntesis, Exponentes, Multiplicación y División, Suma y Resta."
+      },
+      {
+        "enunciado": "¿Cuál es el resultado de 5 + 7 + 5 x 5?",
+        "respuestas": [
+          { "texto": "44" },
+          { "texto": "31" },
+          { "texto": "37" }
+        ],
+        "respuestaCorrecta": 2,
+        "solucion": "El resultado es 37. Debes seguir el orden de las operaciones matemáticas: Paréntesis, Exponentes, Multiplicación y División, Suma y Resta."
+      },
+      {
+        "enunciado": "¿Cuál es el total de horas en una semana?",
+        "respuestas": [
+          { "texto": "60" },
+          { "texto": "3,600" },
+          { "texto": "168" }
+        ],
+        "respuestaCorrecta": 2,
+        "solucion": "El resultado es 168 horas. Una semana se compone de 7 días, y cada día tiene 24 horas. Es decir  7 x 24 = 168."
+      },
+      {
+        "enunciado": "Todos los números naturales y el 0 se llaman números",
+        "respuestas": [
+          { "texto": "Primo" },
+          { "texto": "Entero" },
+          { "texto": "Racional" }
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "Se llaman números Enteros"
+      },
+      {
+        "enunciado": "Escribe con números esta fracción: cinco séptimos.",
+        "respuestas": [
+          { "texto": "7/5" },
+          { "texto": "5/7" },
+          { "texto": "5/6" }
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "La fracción 'cinco séptimos' se expresa asi: 5/7"
+      },
+      {
+        "enunciado": "Escribe con números esta fracción: cinco cuartos.",
+        "respuestas": [
+          { "texto": "7/5" },
+          { "texto": "5/4" },
+          { "texto": "5/6" }
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "La fracción 'cinco cuartos' se expresa asi: 5/4"
+      },
+      {
+        "enunciado": "Escribe con números esta fracción: cinco sextos.",
+        "respuestas": [
+          { "texto": "7/5" },
+          { "texto": "5/4" },
+          { "texto": "5/6" }
+        ],
+        "respuestaCorrecta": 2,
+        "solucion": "La fracción 'cinco sextos' se expresa asi: 5/6"
+      },
+      {
+        "enunciado": "Cuánto es un lustro.",
+        "respuestas": [
+          { "texto": "5 años" },
+          { "texto": "10 años" },
+          { "texto": "1 año" }
+        ],
+        "respuestaCorrecta": 0,
+        "solucion": "Un lustro son cinco años."
+      },
+      {
+        "enunciado": "¿Qué cantidad expresa el número romano XLIX?",
+        "respuestas": [
+          { "texto": "47 años" },
+          { "texto": "49 años" },
+          { "texto": "50 años" }
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "XLIX es 49."
+      },
+      {
+        "enunciado": "Cálculo mental rápido: cuánto es 100x49.",
+        "respuestas": [
+          { "texto": "0.049" },
+          { "texto": "490" },
+          { "texto": "4900" }
+        ],
+        "respuestaCorrecta": 2,
+        "solucion": "Al multiplicar 100x49 su resultado es: 4900"
+      },
+      {
+        "enunciado": "Si un tren viaja a una velocidad de 80 kilómetros por hora, ¿cuántos kilómetros habrá recorrido en 2 horas?",
+        "respuestas": [
+          { "texto": "120 km" },
+          { "texto": "160 km" },
+          { "texto": "200 km" }
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "Habrá recorrido 160 km en 2 horas"
+      },
+      {
+        "enunciado": "Si tienes un rectángulo con 8 cm de un lado, y el otro de 15 cm, ¿cuál es el área del rectángulo?",
+        "respuestas": [
+          { "texto": "23 cm²" },
+          { "texto": "113 cm²" },
+          { "texto": "120 cm²" }
+        ],
+        "respuestaCorrecta": 2,
+        "solucion": "El área del rectángulo es 120 cm². La fórmula es: Lado A x Lado B, es decir, 8 cm x 15 cm"
+      },
+      {
+        "enunciado": "Si tienes un cubo con un lado de longitud 6 cm, ¿cuál es el volumen del cubo?",
+        "respuestas": [
+          { "texto": "12 cm³" },
+          { "texto": "36 cm³" },
+          { "texto": "216 cm³" }
+        ],
+        "respuestaCorrecta": 2,
+        "solucion": "El volumen del cubo es 216 cm³. La fórmula es: Lado^3, es decir, 6 cm x 6 cm x 6 cm"
+      },
+      {
+        "enunciado": "Si una tienda tiene un descuento del 20% en un juguete que cuesta $25, ¿cuál es el precio con descuento?",
+        "respuestas": [
+          { "texto": "$5" },
+          { "texto": "$15" },
+          { "texto": "$20" }
+        ],
+        "respuestaCorrecta": 2,
+        "solucion": "El precio con descuento es $20"
+      },
+      {
+        "enunciado": "Si tienes una jarra con 3/4 de litro de jugo y viertes 1/3 de eso en un vaso, ¿cuánto jugo queda en la jarra?",
+        "respuestas": [
+          { "texto": "1/4 de litro" },
+          { "texto": "1/2 de litro" },
+          { "texto": "2/3 de litro" }
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "Queda 1/2 de litro de jugo en la jarra"
+      },
+      {
+        "enunciado": "Si Juan tiene $45 y quiere ahorrar $15 cada semana, ¿cuántas semanas le tomará ahorrar $120?",
+        "respuestas": [
+          { "texto": "4 semanas" },
+          { "texto": "5 semanas" },
+          { "texto": "6 semanas" }
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "Le tomará 5 semanas ahorrar $120. Operación: 120 - 45 = 75, lo que significa que debe completar solamente $75, entonces 15 x 5 = 75."
+      },
+      {
+        "enunciado": "Si tienes un triángulo con una base de 10 cm y una altura de 8 cm, ¿cuál es su área?",
+        "respuestas": [
+          { "texto": "16 cm²" },
+          { "texto": "40 cm²" },
+          { "texto": "80 cm²" }
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "El área del triángulo es 40 cm². La fórmula para el área del triángulo es: (Base x Altura) / 2. Es decir (10 x 8)/2 = (80)/2 y (80)/2 = 40"
+      },
+      {
+        "enunciado": "Si un libro tiene 240 páginas y has leído 3/8 del libro, ¿cuántas páginas has leído?",
+        "respuestas": [
+          { "texto": "60 páginas" },
+          { "texto": "90 páginas" },
+          { "texto": "120 páginas" }
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "Has leído 90 páginas"
+      },
+      {
+        "enunciado": "En un reloj si la manecilla de la hora está en el número 3 y la de minutos está en el 12, ¿qué hora es?",
+        "respuestas": [
+          { "texto": "3:00" },
+          { "texto": "9:00" },
+          { "texto": "12:15" }
+        ],
+        "respuestaCorrecta": 0,
+        "solucion": "El reloj marca las 3:00. La manecilla de la hora apunta al número correspondiente a la hora actual, mientras que la manecilla de los minutos apunta al 12 cuando es exactamente en punto (es decir, cuando los minutos son 0)"
+      },
+      {
+        "enunciado": "En un rectángulo con un perímetro de 24 cm y uno de los lados tiene 6 cm, ¿cuál es la longitud del otro lado?",
+        "respuestas": [
+          { "texto": "3 cm" },
+          { "texto": "6 cm" },
+          { "texto": "9 cm" }
+        ],
+        "respuestaCorrecta": 1,
+        "solucion": "La longitud del otro lado es 6 cm."
       }
     ]
   }
