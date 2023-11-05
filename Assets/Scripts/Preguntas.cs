@@ -38,6 +38,9 @@ public class Preguntas : MonoBehaviour
 
     public Animator animator;
 
+    private List<Pregunta> preguntasUsadas = new List<Pregunta>();
+    private int preguntaActualIndex = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -87,10 +90,22 @@ public class Preguntas : MonoBehaviour
 
     public void setPregunta()
     {
-        int preguntaRandom = Random.Range(0, bancoPreguntas[nivelPregunta].preguntas.Length);
+        if (preguntasUsadas.Count == bancoPreguntas[nivelPregunta].preguntas.Length)
+        {
+            preguntasUsadas.Clear();
+        }
+
+        int preguntaRandom;
+        do
+        {
+            preguntaRandom = Random.Range(0, bancoPreguntas[nivelPregunta].preguntas.Length);
+        } while (preguntasUsadas.Contains(bancoPreguntas[nivelPregunta].preguntas[preguntaRandom]));
+
+        preguntasUsadas.Add(bancoPreguntas[nivelPregunta].preguntas[preguntaRandom]);
         preguntaActual = bancoPreguntas[nivelPregunta].preguntas[preguntaRandom];
+
         enunciado.text = preguntaActual.enunciado;
-        
+
         for (int i = 0; i < respuestas.Length; i++)
         {
             respuestas[i].text = preguntaActual.respuestas[i].texto;
