@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TablaJugadores.unity
     guid: 30dac20d760f3a44ba44b6a7801a1c30
+  - enabled: 1
+    path: Assets/Scenes/ConfirmarSalir.unity
+    guid: 80233be2e12b2204ba517a24168d28bf
   m_configObjects: {}
