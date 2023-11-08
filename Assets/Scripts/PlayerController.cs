@@ -27,7 +27,7 @@ public class PlayerController : MonoBehaviour
     private float startTime;
     private Transform destination;
     private bool respuesta;
-    private bool respondioIncorrectamente = false; // Para controlar si el jugador respondi� incorrectamente.
+    public bool respondioIncorrectamente = false; // Para controlar si el jugador respondi� incorrectamente.
     private int preguntasIncorrectas = 0;
 
     private void Start()
@@ -178,6 +178,11 @@ public class PlayerController : MonoBehaviour
     public bool QuedanVidas()
     {
         return quedanVidas;
+    }
+
+    public bool respuestaIncorrecta()
+    {
+        return respondioIncorrectamente;
     }
 
     private void OnTriggerEnter2D(Collider2D collider)

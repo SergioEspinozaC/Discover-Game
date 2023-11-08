@@ -34,6 +34,9 @@ public class Preguntas : MonoBehaviour
     private bool isInside = false; // Variable para controlar si el jugador esta dentro del objeto planeta
     private PlayerController playerController;
     private bool detenerContador = false;
+    private bool respuestaCorrecta;
+    private bool respuestaIncorrecta;
+
     public bool continuar = false;
 
     public Animator animator;
@@ -139,9 +142,20 @@ public class Preguntas : MonoBehaviour
             if (playerController.QuedanVidas())
             {
                 setPregunta();
-                animator.SetBool("spaceship", false);
-                animator.SetBool("arriving", true);
-                StartCoroutine(AnimacionLlegada());
+
+                if (playerController.respuestaIncorrecta())
+                {
+                    animator.SetBool("spaceship", false);
+                    animator.SetBool("arriving", true);
+                    StartCoroutine(AnimacionLlegada());
+                }
+                else
+                {
+                    animator.SetBool("spaceship2", false);
+                    animator.SetBool("newPlanet", true);
+                    StartCoroutine(AnimacionLlegada2());
+                }
+                
                 isInside = true;
             }
             
@@ -155,8 +169,19 @@ public class Preguntas : MonoBehaviour
         if (collider.CompareTag("Player"))
         {
             //panelRespuesta.SetActive(false);
-            animator.SetBool("isLeaving", false);
-            animator.SetBool("spaceship", true);
+
+            if (respuestaIncorrecta)
+            {
+                animator.SetBool("alien", false);
+                animator.SetBool("spaceship", true);
+            }
+
+            if (respuestaCorrecta)
+            {
+                animator.SetBool("humanSpaceship", false);
+                animator.SetBool("spaceship2", true);
+            }
+            
             isInside = false;
             continuar = false;
             foreach (Button btnRespuesta in btnRespuesta)
@@ -166,6 +191,8 @@ public class Preguntas : MonoBehaviour
             }
             Debug.Log("Jugador saliendo del planeta");
             playerController.Stop();
+            respuestaCorrecta = false;
+            respuestaIncorrecta = false;
         }
     }
 
@@ -175,13 +202,15 @@ public class Preguntas : MonoBehaviour
         if (respuestaJugador == preguntaActual.respuestaCorrecta)
         {
             Debug.Log("respuesta correcta");
+            respuestaCorrecta = true;
             CambiarColorBoton(btnRespuesta[respuestaJugador], spriteCorrecto);
-            StartCoroutine(TiempoAnimacion());
+            StartCoroutine(TiempoAnimacionAvance());
             StartCoroutine(retrasoMovimientoCorrecto());
         }
         else
         {
             Debug.Log("respuesta mala");
+            respuestaIncorrecta = true;
             CambiarColorBoton(btnRespuesta[respuestaJugador], spriteIncorrecto);
             StartCoroutine(retrasoMovimientoIncorrecto());
         }
@@ -204,7 +233,7 @@ public class Preguntas : MonoBehaviour
         continuar = true;
         playerController.PreguntasIncorrectas();
         panelRespuesta.SetActive(false);
-        StartCoroutine(TiempoAnimacion());
+        StartCoroutine(TiempoAnimacionAlien());
         StartCoroutine(volver());
     }
 
@@ -221,23 +250,38 @@ public class Preguntas : MonoBehaviour
 
     IEnumerator retrasoMovimientoCorrecto()
     {
-        yield return new WaitForSecondsRealtime(2f);
+        yield return new WaitForSecondsRealtime(1.8f);
         tiempoRestante = 20f;
         playerController.Move();
     }
 
-    IEnumerator TiempoAnimacion()
+    IEnumerator TiempoAnimacionAlien()
     {
         yield return new WaitForSecondsRealtime(1f);
         isInside = false;
         animator.SetBool("idle", false);
-        animator.SetBool("isLeaving", true);
+        animator.SetBool("alien", true);
+    }
+
+    IEnumerator TiempoAnimacionAvance()
+    {
+        yield return new WaitForSecondsRealtime(1f);
+        isInside = false;
+        animator.SetBool("idle", false);
+        animator.SetBool("humanSpaceship", true);
     }
 
     IEnumerator AnimacionLlegada()
     {
         yield return new WaitForSecondsRealtime(1.5f);
         animator.SetBool("arriving", false);
+        animator.SetBool("idle", true);
+    }
+
+    IEnumerator AnimacionLlegada2()
+    {
+        yield return new WaitForSecondsRealtime(1.5f);
+        animator.SetBool("newPlanet", false);
         animator.SetBool("idle", true);
     }
 
