@@ -6377,6 +6377,7 @@ MonoBehaviour:
   puntos: 0
   puntosText: {fileID: 938618881}
   quedanVidas: 1
+  respondioIncorrectamente: 0
 --- !u!50 &961829632
 Rigidbody2D:
   serializedVersion: 4
