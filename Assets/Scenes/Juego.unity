@@ -4539,7 +4539,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 497, y: 260.70007}
+  m_AnchoredPosition: {x: 497, y: 295.90002}
   m_SizeDelta: {x: 45, y: 39}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &712819507
@@ -4615,7 +4615,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 447, y: 260.40005}
+  m_AnchoredPosition: {x: 447, y: 295.6}
   m_SizeDelta: {x: 45, y: 39}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &727146408
@@ -6131,7 +6131,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -382.8, y: 257.6}
+  m_AnchoredPosition: {x: -382.8, y: 292.79996}
   m_SizeDelta: {x: 15, y: 29}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &938618881
@@ -6372,6 +6372,7 @@ MonoBehaviour:
   - {fileID: 727146408}
   - {fileID: 1196974992}
   corazonVacio: {fileID: 21300000, guid: 010298b6373d8d243858c1b073fe7520, type: 3}
+  corazonLleno: {fileID: 21300000, guid: 9a5afae9b122e9a45a8391b9174c36a0, type: 3}
   ultimoPlaneta: {fileID: 208574102}
   animator: {fileID: 0}
   puntos: 0
@@ -7174,7 +7175,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -420.4, y: 261}
+  m_AnchoredPosition: {x: -420.4, y: 296.19995}
   m_SizeDelta: {x: 200, y: 39}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1077954491
@@ -8252,7 +8253,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 396.9, y: 260.80005}
+  m_AnchoredPosition: {x: 396.9, y: 296}
   m_SizeDelta: {x: 45, y: 39}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1196974992

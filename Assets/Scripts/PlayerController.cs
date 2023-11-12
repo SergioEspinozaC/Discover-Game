@@ -8,14 +8,15 @@ using TMPro;
 public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 5f; // Velocidad de movimiento del astronauta.
-    private int currentPlanetIndex = 0; // �ndice del planeta actual.
-    private int previousPlanetIndex = 0; // �ndice del planeta anterior
-
+    private int currentPlanetIndex = 0; // indice del planeta actual.
+    private int previousPlanetIndex = 0; // indice del planeta anterior
+    
     public GameObject[] planets; // Un arreglo para almacenar todos los planetas en la escena.
     public GameObject perdida;
     public GameObject victoria;
     public Image[] corazones;
     public Sprite corazonVacio;
+    public Sprite corazonLleno;
     public Preguntas ultimoPlaneta;
     public Animator animator;
     public float puntos = 0;
@@ -29,6 +30,7 @@ public class PlayerController : MonoBehaviour
     private bool respuesta;
     public bool respondioIncorrectamente = false; // Para controlar si el jugador respondi� incorrectamente.
     private int preguntasIncorrectas = 0;
+    private int racha = 0;
 
     private void Start()
     {
@@ -40,11 +42,22 @@ public class PlayerController : MonoBehaviour
 
         if (respuesta && !isMoving)
         {
-            // Verifica que todav�a hay planetas disponibles para avanzar.
+            // Verifica que todavia hay planetas disponibles para avanzar.
             if (currentPlanetIndex < planets.Length - 1)
             {
                 //animator.SetBool("isLeaving", true);
-
+                Debug.Log("Preguntas incorrectas: " + preguntasIncorrectas);
+                if (preguntasIncorrectas > 0)
+                {
+                    racha++;
+                    Debug.Log("racha: " + racha);
+                    if(racha == 3)
+                    {
+                        preguntasIncorrectas--;
+                        corazones[preguntasIncorrectas].sprite = corazonLleno;
+                        racha = 0;
+                    }
+                }
                 // Calcula la longitud del viaje y guarda el tiempo de inicio.
                 destination = planets[currentPlanetIndex + 1].transform;
                 journeyLength = Vector3.Distance(transform.position, destination.position);
@@ -86,7 +99,7 @@ public class PlayerController : MonoBehaviour
                 isMoving = true;
 
                 // Restablece la variable respondioIncorrectamente.
-                respondioIncorrectamente = false;
+                //respondioIncorrectamente = false;
 
                 // Retrocede al planeta anterior.
                 currentPlanetIndex--;

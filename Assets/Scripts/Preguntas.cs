@@ -148,6 +148,7 @@ public class Preguntas : MonoBehaviour
                     animator.SetBool("spaceship", false);
                     animator.SetBool("arriving", true);
                     StartCoroutine(AnimacionLlegada());
+                    playerController.SetRespondioIncorrectamente(false);
                 }
                 else
                 {
@@ -280,9 +281,9 @@ public class Preguntas : MonoBehaviour
 
     IEnumerator AnimacionLlegada2()
     {
-        yield return new WaitForSecondsRealtime(1.5f);
+        yield return new WaitForSecondsRealtime(2f);
         animator.SetBool("newPlanet", false);
-        animator.SetBool("idle", true);
+        animator.SetBool("idle2", true);
     }
 
     IEnumerator retrasoMovimientoIncorrecto()
