@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class CambiarEscena : MonoBehaviour
 {
+    public AudioSource src;
+    public AudioClip sfx1;
 
     void Start()
     {
@@ -13,6 +15,12 @@ public class CambiarEscena : MonoBehaviour
         {
             StartCoroutine(ShowCreditsAndChangeScene());
         }
+
+    }
+
+    public void Button1(){
+        src.clip = sfx1;
+        src.Play();
     }
 
     public void CambiarEscenaClick(string sceneName)
