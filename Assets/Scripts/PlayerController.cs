@@ -21,6 +21,8 @@ public class PlayerController : MonoBehaviour
     public Animator animator;
     public float puntos = 0;
     public TextMeshProUGUI puntosText;
+    public int racha = 0;
+    public TextMeshProUGUI rachaText;
     public bool quedanVidas = true;
 
     private bool isMoving = false;
@@ -30,7 +32,6 @@ public class PlayerController : MonoBehaviour
     private bool respuesta;
     public bool respondioIncorrectamente = false; // Para controlar si el jugador respondi� incorrectamente.
     private int preguntasIncorrectas = 0;
-    private int racha = 0;
 
     private void Start()
     {
@@ -50,14 +51,15 @@ public class PlayerController : MonoBehaviour
                 if (preguntasIncorrectas > 0)
                 {
                     racha++;
-                    Debug.Log("racha: " + racha);
-                    if(racha == 3)
+                    
+                    if (racha == 3)
                     {
                         preguntasIncorrectas--;
                         corazones[preguntasIncorrectas].sprite = corazonLleno;
                         racha = 0;
                     }
                 }
+                rachaText.text = Mathf.CeilToInt(racha).ToString();
                 // Calcula la longitud del viaje y guarda el tiempo de inicio.
                 destination = planets[currentPlanetIndex + 1].transform;
                 journeyLength = Vector3.Distance(transform.position, destination.position);
@@ -80,6 +82,8 @@ public class PlayerController : MonoBehaviour
         else if (respondioIncorrectamente && !isMoving)
         {
 
+            racha = 0;
+            rachaText.text = Mathf.CeilToInt(racha).ToString();
             if (preguntasIncorrectas == 3)
             {
                 quedanVidas = false;

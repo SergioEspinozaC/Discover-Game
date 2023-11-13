@@ -25,7 +25,7 @@ public class Registro : MonoBehaviour
         formData.Add(new MultipartFormDataSection("edad", edad.text));
         formData.Add(new MultipartFormDataSection("email", email.text));
 
-        using (UnityWebRequest www = UnityWebRequest.Post("http://localhost/sqlconnect/register.php", formData))
+        using (UnityWebRequest www = UnityWebRequest.Post("http://localhost/connection/register.php", formData))
         {
             yield return www.SendWebRequest();
 
