@@ -18,7 +18,7 @@ public class Registro : MonoBehaviour
         StartCoroutine(Register());
     }
 
-    public void RegistrarPuntaje(int puntaje)
+    public void RegistrarPuntaje(string puntaje)
     {
         StartCoroutine(RegisterPuntaje(puntaje));
     }
@@ -62,10 +62,10 @@ public class Registro : MonoBehaviour
         }
     }
 
-    IEnumerator RegisterPuntaje(int puntaje)
+    IEnumerator RegisterPuntaje(string puntaje)
     {
         List<IMultipartFormSection> formData = new List<IMultipartFormSection>();
-        formData.Add(new MultipartFormDataSection("puntaje", puntaje.ToString()));
+        formData.Add(new MultipartFormDataSection("puntaje", puntaje));
 
         using (UnityWebRequest www = UnityWebRequest.Post("http://localhost/connection/registroPuntuacion.php", formData))
         {

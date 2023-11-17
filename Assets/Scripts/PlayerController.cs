@@ -78,8 +78,10 @@ public class PlayerController : MonoBehaviour
             else
             {
                 puntos += 1;
+                puntosText.text = Mathf.CeilToInt(puntos).ToString();
                 victoria.SetActive(true);
                 ultimoPlaneta.DetenerContador();
+                respuesta = false;
             }
         }
         else if (respondioIncorrectamente && !isMoving)
@@ -207,7 +209,8 @@ public class PlayerController : MonoBehaviour
 
     public void registrarPuntaje()
     {
-        registro.RegistrarPuntaje(puntos);
+        string puntaje = puntos.ToString();
+        registro.RegistrarPuntaje(puntaje);
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
