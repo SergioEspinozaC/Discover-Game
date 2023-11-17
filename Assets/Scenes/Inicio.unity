@@ -856,9 +856,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1435371141}
   - component: {fileID: 1435371140}
+  - component: {fileID: 1435371142}
   m_Layer: 0
   m_Name: BackgroundMusic
-  m_TagString: Untagged
+  m_TagString: GameMusic
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -875,7 +876,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: ac446f17800eb2a48bcb6c3170a9c01e, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.43
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -974,6 +975,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1435371142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1435371139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d25daed7e7d047479c2acc7c6d09d76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1752998965
 GameObject:
   m_ObjectHideFlags: 0
@@ -1395,6 +1408,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   src: {fileID: 875754015}
   sfx1: {fileID: 8300000, guid: 56242d22267aefb4e84539fc521e166c, type: 3}
+  sfx2: {fileID: 8300000, guid: 65566002b10f74c428de4a4e8d394c39, type: 3}
+  sfx3: {fileID: 8300000, guid: cb19b750588451944aaeac9680c32b95, type: 3}
+  sfx4: {fileID: 8300000, guid: ba948c89c18f1984ba4ef1180f5a4cc0, type: 3}
+  sfx5: {fileID: 8300000, guid: 2fc685365077862438030e580a804452, type: 3}
+  sfx6: {fileID: 8300000, guid: b80e17d049b4f2d45be5e9a7197bbdda, type: 3}
+  sfx7: {fileID: 8300000, guid: dae29ecdd8fe9d8418135a96cee9bece, type: 3}
 --- !u!1001 &3178275104279646793
 PrefabInstance:
   m_ObjectHideFlags: 0

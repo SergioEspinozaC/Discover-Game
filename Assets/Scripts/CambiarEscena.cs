@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class CambiarEscena : MonoBehaviour
 {
     public AudioSource src;
-    public AudioClip sfx1;
+    public AudioClip sfx1, sfx2, sfx3, sfx4, sfx5, sfx6, sfx7;
 
     void Start()
     {
