@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
     public Sprite corazonLleno;
     public Preguntas ultimoPlaneta;
     public Animator animator;
-    public float puntos = 0;
+    public int puntos = 0;
     public TextMeshProUGUI puntosText;
     public int racha = 0;
     public TextMeshProUGUI rachaText;
@@ -33,9 +33,11 @@ public class PlayerController : MonoBehaviour
     public bool respondioIncorrectamente = false; // Para controlar si el jugador respondi� incorrectamente.
     private int preguntasIncorrectas = 0;
 
+    public Registro registro;
     private void Start()
     {
         animator = GetComponent<Animator>();
+        
     }
 
     private void Update()
@@ -75,6 +77,7 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
+                puntos += 1;
                 victoria.SetActive(true);
                 ultimoPlaneta.DetenerContador();
             }
@@ -200,6 +203,11 @@ public class PlayerController : MonoBehaviour
     public bool respuestaIncorrecta()
     {
         return respondioIncorrectamente;
+    }
+
+    public void registrarPuntaje()
+    {
+        registro.RegistrarPuntaje(puntos);
     }
 
     private void OnTriggerEnter2D(Collider2D collider)

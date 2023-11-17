@@ -18,14 +18,21 @@ public class Registro : MonoBehaviour
         StartCoroutine(Register());
     }
 
+    public void RegistrarPuntaje(int puntaje)
+    {
+        StartCoroutine(RegisterPuntaje(puntaje));
+    }
+
     IEnumerator Register()
     {
+        //string url = "http://localhost/connection/conexionDB.php";
+
         List<IMultipartFormSection> formData = new List<IMultipartFormSection>();
         formData.Add(new MultipartFormDataSection("nombre_completo", nombre.text));
         formData.Add(new MultipartFormDataSection("edad", edad.text));
         formData.Add(new MultipartFormDataSection("email", email.text));
-
-        using (UnityWebRequest www = UnityWebRequest.Post("http://localhost/connection/register.php", formData))
+        
+        using (UnityWebRequest www = UnityWebRequest.Post("http://localhost/connection/conexionDB.php", formData))
         {
             yield return www.SendWebRequest();
 
@@ -53,6 +60,30 @@ public class Registro : MonoBehaviour
                 }
             }
         }
+    }
+
+    IEnumerator RegisterPuntaje(int puntaje)
+    {
+        List<IMultipartFormSection> formData = new List<IMultipartFormSection>();
+        formData.Add(new MultipartFormDataSection("puntaje", puntaje.ToString()));
+
+        using (UnityWebRequest www = UnityWebRequest.Post("http://localhost/connection/registroPuntuacion.php", formData))
+        {
+            yield return www.SendWebRequest();
+
+            if (www.result == UnityWebRequest.Result.Success)
+            {
+                Debug.Log("Puntaje registrado exitosamente");
+            }
+            else
+            {
+                Debug.LogError("Error al registrar el puntaje. Error #" + www.result + ", Response Code: " + www.responseCode + ", Response: " + www.downloadHandler.text);
+
+                // Manejar errores adicionales si es necesario
+            }
+            www.Dispose();
+        }
+
     }
 
     public void VerifyInputs()
