@@ -34,6 +34,7 @@ public class PlayerController : MonoBehaviour
     private int preguntasIncorrectas = 0;
 
     public Registro registro;
+    public AudioSource gameover;
     private void Start()
     {
         animator = GetComponent<Animator>();
@@ -217,9 +218,16 @@ public class PlayerController : MonoBehaviour
     {
         if (collider.CompareTag("Sol"))
         {
+            gameover.Play();
+            StartCoroutine(detenerSonido(5));
             perdida.SetActive(true);
         }
     }
 
+    IEnumerator detenerSonido(float tiempo)
+    {
+        yield return new WaitForSecondsRealtime(tiempo);
+        gameover.Stop();
+    }
 }
 

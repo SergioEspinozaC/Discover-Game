@@ -40,6 +40,8 @@ public class Preguntas : MonoBehaviour
     public bool continuar = false;
 
     public Animator animator;
+    public AudioSource respondioCorrectamente;
+    public AudioSource respondioIncorrectamente;
 
     private List<Pregunta> preguntasUsadas = new List<Pregunta>();
     private int preguntaActualIndex = 0;
@@ -204,6 +206,7 @@ public class Preguntas : MonoBehaviour
         {
             Debug.Log("respuesta correcta");
             respuestaCorrecta = true;
+            respondioCorrectamente.Play();
             CambiarColorBoton(btnRespuesta[respuestaJugador], spriteCorrecto);
             StartCoroutine(TiempoAnimacionAvance());
             StartCoroutine(retrasoMovimientoCorrecto());
@@ -212,6 +215,7 @@ public class Preguntas : MonoBehaviour
         {
             Debug.Log("respuesta mala");
             respuestaIncorrecta = true;
+            StartCoroutine(detenerSonido(2));
             CambiarColorBoton(btnRespuesta[respuestaJugador], spriteIncorrecto);
             StartCoroutine(retrasoMovimientoIncorrecto());
         }
@@ -243,6 +247,12 @@ public class Preguntas : MonoBehaviour
         detenerContador = true;
     }
 
+    IEnumerator detenerSonido(float tiempo)
+    {
+        respondioIncorrectamente.Play();
+        yield return new WaitForSecondsRealtime(tiempo);
+        respondioIncorrectamente.Stop();
+    }
     IEnumerator volver()
     {
         yield return new WaitForSecondsRealtime(2f);
