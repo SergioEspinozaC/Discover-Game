@@ -73,7 +73,10 @@ public class Preguntas : MonoBehaviour
                         {
                             tiempoAgotado = true;
                             tiempoText.text = "0";
-                            panelRespuesta.SetActive(true);
+                            if (!respuestaCorrecta)
+                            {
+                                StartCoroutine(retrasoPanelRespuesta());
+                            }
                         }
                     }
                 }
@@ -294,6 +297,12 @@ public class Preguntas : MonoBehaviour
         yield return new WaitForSecondsRealtime(2f);
         animator.SetBool("newPlanet", false);
         animator.SetBool("idle2", true);
+    }
+
+    IEnumerator retrasoPanelRespuesta()
+    {
+        yield return new WaitForSecondsRealtime(0.5f);
+        panelRespuesta.SetActive(true);
     }
 
     IEnumerator retrasoMovimientoIncorrecto()

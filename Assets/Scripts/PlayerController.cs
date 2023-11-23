@@ -14,6 +14,8 @@ public class PlayerController : MonoBehaviour
     public GameObject[] planets; // Un arreglo para almacenar todos los planetas en la escena.
     public GameObject perdida;
     public GameObject victoria;
+    public GameObject fuegoRacha;
+    public GameObject corazon;
     public Image[] corazones;
     public Sprite corazonVacio;
     public Sprite corazonLleno;
@@ -30,15 +32,16 @@ public class PlayerController : MonoBehaviour
     private float startTime;
     private Transform destination;
     private bool respuesta;
-    public bool respondioIncorrectamente = false; // Para controlar si el jugador respondi� incorrectamente.
+    public bool respondioIncorrectamente = false; // Para controlar si el jugador respondio incorrectamente.
     private int preguntasIncorrectas = 0;
 
     public Registro registro;
     public AudioSource gameover;
+    public AudioSource win;
     private void Start()
     {
         animator = GetComponent<Animator>();
-        
+        fuegoRacha.SetActive(false);
     }
 
     private void Update()
@@ -54,10 +57,12 @@ public class PlayerController : MonoBehaviour
                 if (preguntasIncorrectas > 0)
                 {
                     racha++;
-                    
+                    fuegoRacha.SetActive(true);
                     if (racha == 3)
                     {
+                        fuegoRacha.SetActive(false);
                         preguntasIncorrectas--;
+                        StartCoroutine(mostrarCorazon());
                         corazones[preguntasIncorrectas].sprite = corazonLleno;
                         racha = 0;
                     }
@@ -80,6 +85,7 @@ public class PlayerController : MonoBehaviour
             {
                 puntos += 1;
                 puntosText.text = Mathf.CeilToInt(puntos).ToString();
+                win.Play();
                 victoria.SetActive(true);
                 ultimoPlaneta.DetenerContador();
                 respuesta = false;
@@ -224,6 +230,12 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    IEnumerator mostrarCorazon()
+    {
+        corazon.SetActive(true);
+        yield return new WaitForSecondsRealtime(1.5f);
+        corazon.SetActive(false);
+    }
     IEnumerator detenerSonido(float tiempo)
     {
         yield return new WaitForSecondsRealtime(tiempo);
