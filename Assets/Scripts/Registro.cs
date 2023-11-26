@@ -39,7 +39,7 @@ public class Registro : MonoBehaviour
             if (www.result == UnityWebRequest.Result.Success)
             {
                 Debug.Log("User created successfully");
-                SceneManager.LoadScene("Juego");
+                SceneManager.LoadScene("Cinematica");
             }
             else
             {

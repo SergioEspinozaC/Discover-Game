@@ -10,12 +10,11 @@ public class CambiarEscena : MonoBehaviour
 
     void Start()
     {
-        // Comprueba si debes mostrar los cr�ditos o pasar a la escena "Inicio".
+        // Comprueba si debes mostrar los creditos o pasar a la escena "Inicio".
         if (SceneManager.GetActiveScene().name == "CreditosIniciales")
         {
             StartCoroutine(ShowCreditsAndChangeScene());
         }
-
     }
 
     public void Button1(){
@@ -46,7 +45,6 @@ public class CambiarEscena : MonoBehaviour
         yield return new WaitForSecondsRealtime(0.3f);
         SceneManager.LoadScene(sceneName);
     }
-
 
     IEnumerator ShowCreditsAndChangeScene()
     {
