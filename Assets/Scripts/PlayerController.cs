@@ -189,13 +189,15 @@ public class PlayerController : MonoBehaviour
     {
         if (!isMoving)
         {
-            // Coloca al jugador en la posici�n del objeto "Sol".
+            // Coloca al jugador en la posicion del objeto "Sol".
             Transform solTransform = GameObject.Find("Sol").transform;
             destination = solTransform;
 
             // Calcula la longitud del viaje y guarda el tiempo de inicio.
             journeyLength = Vector3.Distance(transform.position, destination.position);
             startTime = Time.time;
+
+            moveSpeed = 15f;
 
             // Marca que estamos en movimiento.
             isMoving = true;

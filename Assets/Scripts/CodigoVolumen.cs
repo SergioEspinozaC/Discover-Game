@@ -16,6 +16,16 @@ public class CodigoVolumen : MonoBehaviour
         RevisarSiEstaMute();
     }
 
+    public void pauseButton()
+    {
+        Time.timeScale = 0;
+    }
+
+    public void playButton()
+    {
+        Time.timeScale = 1;
+    }
+
     public void ChangeSlider(float valor)
     {
         sliderValue = valor;

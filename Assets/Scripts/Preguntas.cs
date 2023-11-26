@@ -15,7 +15,7 @@ public class Preguntas : MonoBehaviour
 
     public bool respuestaValida;
 
-    public float tiempoRestante = 20f;
+    public float tiempoRestante = 60f;
     public TextMeshProUGUI tiempoText;
     private bool tiempoAgotado = false;
 
@@ -88,7 +88,7 @@ public class Preguntas : MonoBehaviour
         else
         {
             panelPregunta.SetActive(false);
-            tiempoRestante = 20f; // Reiniciar el tiempo cuando el jugador sale del planeta
+            tiempoRestante = 63f; // Reiniciar el tiempo cuando el jugador sale del planeta
             tiempoAgotado = false;
             tiempoText.text = "20"; // Actualizar el texto del tiempo
             //Debug.Log("Jugador fuera del planeta");
@@ -282,19 +282,22 @@ public class Preguntas : MonoBehaviour
         yield return new WaitForSecondsRealtime(1f);
         isInside = false;
         animator.SetBool("idle", false);
+        animator.SetBool("idle2", false);
         animator.SetBool("humanSpaceship", true);
     }
 
     IEnumerator AnimacionLlegada()
     {
         yield return new WaitForSecondsRealtime(1.5f);
+        Debug.Log("Animacion llegada");
         animator.SetBool("arriving", false);
         animator.SetBool("idle", true);
     }
 
     IEnumerator AnimacionLlegada2()
     {
-        yield return new WaitForSecondsRealtime(2f);
+        yield return new WaitForSecondsRealtime(1.5f);
+        Debug.Log("Animacion llegada 2");
         animator.SetBool("newPlanet", false);
         animator.SetBool("idle2", true);
     }

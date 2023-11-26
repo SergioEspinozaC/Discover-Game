@@ -43,7 +43,7 @@ public class CambiarEscena : MonoBehaviour
     //Corrutina
     IEnumerator retrasoEscena(string sceneName)
     {
-        yield return new WaitForSecondsRealtime(1f);
+        yield return new WaitForSecondsRealtime(0.3f);
         SceneManager.LoadScene(sceneName);
     }
 
