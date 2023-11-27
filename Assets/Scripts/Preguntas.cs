@@ -82,8 +82,7 @@ public class Preguntas : MonoBehaviour
                 }
             }
             StartCoroutine(retrasoPregunta());
-            //animator.SetBool("isLeaving", true);
-            //Debug.Log("Jugador dentro del planeta");
+      
         }
         else
         {
@@ -91,7 +90,7 @@ public class Preguntas : MonoBehaviour
             tiempoRestante = 63f; // Reiniciar el tiempo cuando el jugador sale del planeta
             tiempoAgotado = false;
             tiempoText.text = "20"; // Actualizar el texto del tiempo
-            //Debug.Log("Jugador fuera del planeta");
+            
         }
         
     }
@@ -164,9 +163,7 @@ public class Preguntas : MonoBehaviour
                 
                 isInside = true;
             }
-            
-            //animator.SetTrigger("idleTrigger");
-            Debug.Log("Jugador entrando al planeta");
+
         }
     }
 
@@ -195,7 +192,7 @@ public class Preguntas : MonoBehaviour
                 Image image = btnRespuesta.GetComponent<Image>();
                 image.sprite = spriteNormal;
             }
-            Debug.Log("Jugador saliendo del planeta");
+
             playerController.Stop();
             respuestaCorrecta = false;
             respuestaIncorrecta = false;
@@ -207,7 +204,7 @@ public class Preguntas : MonoBehaviour
         
         if (respuestaJugador == preguntaActual.respuestaCorrecta)
         {
-            Debug.Log("respuesta correcta");
+
             respuestaCorrecta = true;
             respondioCorrectamente.Play();
             CambiarColorBoton(btnRespuesta[respuestaJugador], spriteCorrecto);
@@ -216,7 +213,7 @@ public class Preguntas : MonoBehaviour
         }
         else
         {
-            Debug.Log("respuesta mala");
+        
             respuestaIncorrecta = true;
             StartCoroutine(detenerSonido(2));
             CambiarColorBoton(btnRespuesta[respuestaJugador], spriteIncorrecto);
@@ -237,7 +234,7 @@ public class Preguntas : MonoBehaviour
 
     public void Continuar() 
     {
-        Debug.Log("Le dio click a continuar");
+   
         continuar = true;
         playerController.PreguntasIncorrectas();
         panelRespuesta.SetActive(false);
@@ -289,7 +286,6 @@ public class Preguntas : MonoBehaviour
     IEnumerator AnimacionLlegada()
     {
         yield return new WaitForSecondsRealtime(1.5f);
-        Debug.Log("Animacion llegada");
         animator.SetBool("arriving", false);
         animator.SetBool("idle", true);
     }
@@ -297,7 +293,6 @@ public class Preguntas : MonoBehaviour
     IEnumerator AnimacionLlegada2()
     {
         yield return new WaitForSecondsRealtime(1.5f);
-        Debug.Log("Animacion llegada 2");
         animator.SetBool("newPlanet", false);
         animator.SetBool("idle2", true);
     }

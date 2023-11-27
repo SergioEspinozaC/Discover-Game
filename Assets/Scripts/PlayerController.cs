@@ -52,8 +52,7 @@ public class PlayerController : MonoBehaviour
             // Verifica que todavia hay planetas disponibles para avanzar.
             if (currentPlanetIndex < planets.Length - 1)
             {
-                //animator.SetBool("isLeaving", true);
-                Debug.Log("Preguntas incorrectas: " + preguntasIncorrectas);
+                
                 if (preguntasIncorrectas > 0)
                 {
                     racha++;
@@ -126,7 +125,7 @@ public class PlayerController : MonoBehaviour
 
                 corazones[preguntasIncorrectas - 1].sprite = corazonVacio;
 
-                Debug.Log(preguntasIncorrectas);
+                
 
             }
             else
@@ -146,7 +145,7 @@ public class PlayerController : MonoBehaviour
             float distanceCovered = (Time.time - startTime) * moveSpeed;
             float fractionOfJourney = distanceCovered / journeyLength;
 
-            // Calcula la direcci�n y la magnitud del movimiento.
+            // Calcula la direccion y la magnitud del movimiento.
             Vector3 direction = (destination.position - transform.position).normalized;
             float step = moveSpeed * Time.deltaTime;
 
@@ -156,9 +155,9 @@ public class PlayerController : MonoBehaviour
             // Cuando llegamos al destino, det�n el movimiento y actualiza el �ndice del planeta.
             if (fractionOfJourney >= 1.0f)
             {
-                //animator.SetBool("isLeaving", false);
+                
                 isMoving = false;
-                //currentPlanetIndex++;
+                
             }
         }
 

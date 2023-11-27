@@ -24,13 +24,12 @@ public class CambiarEscena : MonoBehaviour
 
     public void CambiarEscenaClick(string sceneName)
     {
-        Debug.Log("Cambiando Escena: " + sceneName);
         StartCoroutine(retrasoEscena(sceneName));
     }
 
     public void SalirJuego()
     {
-        Debug.Log("Salir");
+        
         Application.Quit();
     }
 
